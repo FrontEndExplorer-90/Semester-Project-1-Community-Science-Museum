@@ -1,0 +1,126 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global Font */
+body {
+    font-family: 'Kodchasan', sans-serif; /* Default font */
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: #F5EACD; /* Light beige fallback */
+    color: #333;
+}
+
+/* Navigation Bar (Header) */
+.navbar {
+    background-color: #F5EACD;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0px;
+    position: relative;
+    z-index: 10; 
+    width: 100%;
+}
+
+.container {
+    max-width: none; /* Set the desired max width */
+    margin: 0 auto; /* Center the content */
+    width: 100%; /* Full width by default */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logo */
+.logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.logo span {
+    font-size: 20px; /* Adjust font size if needed */
+    font-weight: bold; /* Make the text stand out */
+    text-decoration: none;
+    color: black;
+}
+
+.logo img {
+    height: 100px; /* Increase height for a larger logo */
+    width: auto; /* Keep the aspect ratio intact */
+    margin-right: 10px; /* Maintain spacing between logo and text */
+    transition: transform 0.3s ease; /* Hover effect remains */
+}
+
+.logo:hover img {
+    transform: scale(1.1); /* Slight zoom effect */
+}
+
+/* Navigation Menu */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #0077cc;
+}
+
+/* Plan Your Visit CTA */
+.cta {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    color: #0077cc;
+    font-weight: bold;
+    text-decoration: none;
+    border: 1px solid #0077cc;
+    border-radius: 5px;
+    padding: 5px 10px;
+    transition: background-color 0.3s, color 0.3s;
+    text-align: center;
+}
+
+.cta:hover {
+    background-color: #0077cc;
+    color: #fff;
+}
+
+/* Footer */
+.footer {
+    background-color: #F5EACD;
+    text-align: center;
+    padding: 10px 0;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    color: #333;
+    border-top: 1px solid #ddd;
+}
+
+.footer a {
+    text-decoration: none;
+    color: #0077cc;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+.footer a:hover {
+    color: #005fa3;
+}

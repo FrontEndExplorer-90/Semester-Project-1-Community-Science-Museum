@@ -1,0 +1,87 @@
+/* Background Wrapper */
+.background-wrapper {
+    background: url('../Images/museumhome1.jpg') no-repeat center center/cover;
+    background-attachment: fixed; /* Keeps the background static during scrolling */
+    background-size: cover; /* Ensures the image scales to cover the entire page */
+    min-height: 100vh; /* Full height of the viewport */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Hero Section */
+.hero {
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+.hero-content {
+    position: absolute;
+    top: 10%;
+    left: 50%; /* Horizontally centers the content */
+    transform: translate(-50%, -50%); /* Adjusts for perfect centering */
+    color: black; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Shadow for readability */
+    font-family: 'Kodchasan', sans-serif;
+    font-size: 3rem; /* Adjust font size for the title */
+    line-height: 1.2; /* Adjust line height for better spacing */
+    font-weight: bold;
+}
+
+/* Highlights Section */
+.highlights {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 40px 20px;
+    background-color: rgba(245, 234, 205, 0.9); /* Slightly transparent beige */
+}
+
+.highlight-box {
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: transform 0.3s, background-color 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 0 10px;
+    color: #fff;
+}
+
+.highlight-box a {
+    color: #fff; /* Ensures links inside boxes are white */
+    text-decoration: none;
+}
+
+.highlight-box a:hover {
+    color: #ddd;
+}
+
+/* Individual Box Colors */
+.exhibits {
+    background-color: #334F77; /* Blue */
+}
+
+.events {
+    background-color: #47837A; /* Teal */
+}
+
+.involved {
+    background-color: #BB7541; /* Orange */
+}
+
+/* Hover Effects */
+.highlight-box:hover {
+    transform: scale(1.05);
+    filter: brightness(0.9);
+}
+
