@@ -1,0 +1,68 @@
+/* Events Page */
+.events {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #F5EACD; /* Light beige background */
+    min-height: calc(100vh - 100px); /* Ensures enough space for footer */
+}
+
+.events h1 {
+    font-family: 'Kodchasan', sans-serif;
+    font-size: 2rem;
+    margin-bottom: 40px;
+    color: #333;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Events Grid */
+.events-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+}
+
+/* Large Card for Visiting Professor */
+.large-card {
+    width: 90%; /* Smaller width for a balanced look */
+    max-width: 700px;
+    border-radius: 40px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.large-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 40px; /* Rounded corners */
+}
+
+/* Sub-grid for Other Cards */
+.sub-grid {
+    display: flex;
+    justify-content: center;
+    gap: 40px; /* Space between the two cards */
+}
+
+.event-card {
+    width: 500px; /* Slightly larger width for sub-grid cards */
+    border-radius: 40px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.event-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 20px;
+}
+
+/* Hover Effects */
+.event-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}

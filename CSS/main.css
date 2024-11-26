@@ -7,10 +7,10 @@
 
 /* Global Font */
 body {
-    font-family: 'Kodchasan', sans-serif; /* Default font */
+    font-family: 'Kodchasan', sans-serif; 
     font-size: 16px;
     line-height: 1.5;
-    background-color: #F5EACD; /* Light beige fallback */
+    background-color: #F5EACD; 
     color: #333;
 }
 
@@ -20,16 +20,16 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 0px;
+    padding: 20px 0px;
     position: relative;
-    z-index: 10; 
+    z-index: 0; 
     width: 100%;
 }
 
 .container {
-    max-width: none; /* Set the desired max width */
-    margin: 0 auto; /* Center the content */
-    width: 100%; /* Full width by default */
+    max-width: none; 
+    margin: 0 auto; 
+    width: 100%; 
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -43,21 +43,27 @@ body {
 }
 
 .logo span {
-    font-size: 20px; /* Adjust font size if needed */
-    font-weight: bold; /* Make the text stand out */
+    font-size: 20px; 
+    font-weight: bold; 
     text-decoration: none;
     color: black;
+    position: relative;
+    left: 140px;
+    margin-top: 10px;
 }
 
 .logo img {
-    height: 100px; /* Increase height for a larger logo */
-    width: auto; /* Keep the aspect ratio intact */
-    margin-right: 10px; /* Maintain spacing between logo and text */
-    transition: transform 0.3s ease; /* Hover effect remains */
+    height: 145px; 
+    width: auto; 
+    margin-right: 10px; 
+    margin-top: 55px;
+    position: absolute;
+    z-index: 1;
+    transition: transform 0.3s ease; 
 }
 
 .logo:hover img {
-    transform: scale(1.1); /* Slight zoom effect */
+    transform: scale(1.1); 
 }
 
 /* Navigation Menu */
@@ -81,17 +87,18 @@ body {
 }
 
 .nav-links a:hover {
-    color: #0077cc;
+    color: black;
 }
 
 /* Plan Your Visit CTA */
 .cta {
     font-family: 'Inter', sans-serif;
     font-size: 16px;
-    color: #0077cc;
+    background-color: #C08C66;
+    color: black;
     font-weight: bold;
     text-decoration: none;
-    border: 1px solid #0077cc;
+    border: 1px solid black;
     border-radius: 5px;
     padding: 5px 10px;
     transition: background-color 0.3s, color 0.3s;
@@ -99,8 +106,8 @@ body {
 }
 
 .cta:hover {
-    background-color: #0077cc;
-    color: #fff;
+    background-color: #BB7541;
+    color: black;
 }
 
 /* Footer */
@@ -116,11 +123,11 @@ body {
 
 .footer a {
     text-decoration: none;
-    color: #0077cc;
+    color: black;
     margin: 0 10px;
     transition: color 0.3s;
 }
 
 .footer a:hover {
-    color: #005fa3;
+    color: black;
 }
