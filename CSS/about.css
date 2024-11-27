@@ -37,7 +37,7 @@ body {
 
 .content-container {
     display: flex;
-    flex-direction: row; 
+    flex-direction: row;
     min-height: 100vh;
     position: relative;
 }
@@ -45,7 +45,7 @@ body {
 /* Text Content */
 .about-text {
     flex: 1;
-    padding: 40px; 
+    padding: 40px;
     text-align: left;
     z-index: 1;
 }
@@ -59,11 +59,11 @@ body {
 }
 
 .quote {
-    font-size: 1.8rem; 
-    text-align: center; 
-    font-style: italic; 
-    margin-bottom: 20px; 
-    color: black; 
+    font-size: 1.8rem;
+    text-align: center;
+    font-style: italic;
+    margin-bottom: 20px;
+    color: black;
 }
 
 .about-text p {
@@ -73,10 +73,10 @@ body {
 
 /* Image Styling */
 .image-container {
-    flex: 0 0 30%; 
+    flex: 0 0 30%;
     position: relative;
-    height: 100vh; 
-    z-index: -1; 
+    height: 100vh;
+    z-index: -1;
 }
 
 .image-container img {
@@ -85,7 +85,7 @@ body {
     object-fit: cover;
 }
 
-/* Footer for aboutpage */
+/* Footer for About Page */
 .footer {
     position: relative;
     background-color: #F5EACD;
@@ -105,4 +105,59 @@ body {
     width: 100%;
     height: 3px;
     background-color: black;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    /* Adjust layout for tablets */
+    .content-container {
+        flex-direction: column; /* Stack the text and image vertically */
+    }
+
+    .about-text {
+        padding: 20px;
+    }
+
+    .image-container {
+        height: 300px; /* Adjust image height for tablets */
+        flex: none; /* Allow the image to size freely */
+    }
+
+    .about-title {
+        font-size: 2.5rem; /* Adjust title size for tablets */
+    }
+
+    .quote {
+        font-size: 1.6rem; /* Slightly smaller quotes for tablets */
+    }
+}
+
+@media (max-width: 768px) {
+    /* Adjust layout for mobile */
+    .content-container {
+        flex-direction: column;
+    }
+
+    .about-text {
+        padding: 20px;
+        text-align: center; /* Center-align text for smaller screens */
+    }
+
+    .image-container {
+        height: 250px; /* Adjust image height for mobile */
+        flex: none;
+    }
+
+    .about-title {
+        font-size: 2rem; /* Smaller title for mobile */
+    }
+
+    .quote {
+        font-size: 1.4rem; /* Further reduction for quotes */
+    }
+
+    .footer {
+        font-size: 12px; /* Slightly smaller footer text */
+        padding: 8px 0;
+    }
 }

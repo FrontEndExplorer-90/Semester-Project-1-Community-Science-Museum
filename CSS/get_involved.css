@@ -29,7 +29,6 @@ header .container {
     font-weight: bold;
 }
 
-
 .cta {
     background-color: #C08C66;
     padding: 5px 10px;
@@ -61,33 +60,32 @@ header .container {
 /* Grid Layout */
 .grid {
     display: grid;
-    grid-template-columns: 1fr 1fr; 
-    grid-template-rows: auto auto; 
-    grid-template-areas: 
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas:
         "support support"
-        "volunteer internships"; 
-    gap: 20px; 
-    justify-items: center; 
-    align-items: center; 
+        "volunteer internships";
+    gap: 20px;
+    justify-items: center;
+    align-items: center;
     padding: 20px;
 }
 
-
 .card:nth-child(1) {
-    grid-area: support; 
+    grid-area: support;
 }
 
 .card:nth-child(2) {
-    grid-area: volunteer; 
+    grid-area: volunteer;
 }
 
 .card:nth-child(3) {
-    grid-area: internships; 
+    grid-area: internships;
 }
 
 .card {
-    width: 485px; 
-    height: 365px; 
+    width: 485px;
+    height: 365px;
     background-color: #C08C66;
     border-radius: 40px;
     border: 2px solid black;
@@ -121,4 +119,59 @@ header .container {
     text-decoration: none;
     color: black;
     margin: 0 10px;
+}
+
+/* Responsive Design */
+
+/* Tablet Styles (1024px and below) */
+@media (max-width: 1024px) {
+    .grid {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "support"
+            "volunteer"
+            "internships";
+        gap: 30px;
+    }
+
+    .card {
+        width: 90%; /* Adjust card width for tablets */
+        height: auto; /* Allow height to adjust based on content */
+        padding: 20px;
+    }
+
+    .get-involved h1 {
+        font-size: 2.2rem; /* Slightly reduce the title size */
+    }
+}
+
+/* Mobile Styles (768px and below) */
+@media (max-width: 768px) {
+    .grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        gap: 20px; /* Smaller gaps between items */
+    }
+
+    .card {
+        width: 100%; /* Full width for smaller screens */
+        height: auto;
+        padding: 15px; /* Reduce padding for smaller cards */
+    }
+
+    .get-involved h1 {
+        font-size: 2rem; /* Further reduce title size */
+    }
+
+    .card h2 {
+        font-size: 1.6rem; /* Adjust header size */
+    }
+
+    .card p {
+        font-size: 0.9rem; /* Adjust paragraph size */
+    }
+
+    .footer {
+        font-size: 12px; /* Slightly smaller footer text */
+    }
 }

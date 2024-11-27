@@ -3,7 +3,7 @@
     text-align: center;
     padding: 60px 20px;
     background-color: #F5EACD;
-    min-height: calc(100vh - 100px); 
+    min-height: calc(100vh - 100px);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -23,8 +23,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
-    gap: 40px; 
+    flex-wrap: wrap; /* Enable wrapping for responsiveness */
+    gap: 40px;
     max-width: 1200px;
 }
 
@@ -64,7 +64,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.8); 
+    background-color: rgba(0, 0, 0, 0.8);
     color: #fff;
     font-family: 'Kodchasan', sans-serif;
     font-size: 0.9rem;
@@ -80,15 +80,65 @@
 }
 
 .circle-container:hover .overlay {
-    opacity: 1; /* Overlay appears on hover */
+    opacity: 1;
 }
 
 /* Exhibit Title */
 .exhibit-item h3 {
     font-family: 'Kodchasan', sans-serif;
     font-size: 1.8rem;
-    color: #333;
+    color: black;
     margin-top: 15px;
     text-align: center;
 }
+
+/* Responsive Design */
+
+/* Tablet Styles (1024px and below) */
+@media (max-width: 1024px) {
+    .exhibit-circle-container {
+        gap: 30px; /* Reduce gap between circles */
+    }
+
+    .circle-container {
+        width: 300px; /* Smaller circles for tablets */
+        height: 300px;
+    }
+
+    .exhibits h1 {
+        font-size: 3rem; /* Adjust header size */
+    }
+
+    .overlay {
+        font-size: 0.8rem; /* Adjust overlay text size */
+        padding: 15px;
+    }
+}
+
+/* Mobile Styles (768px and below) */
+@media (max-width: 768px) {
+    .exhibit-circle-container {
+        flex-direction: column; /* Stack items vertically */
+        gap: 20px;
+    }
+
+    .circle-container {
+        width: 250px; /* Smaller circles for mobile */
+        height: 250px;
+    }
+
+    .exhibits h1 {
+        font-size: 2.4rem; /* Smaller header size for mobile */
+        margin-bottom: 20px;
+    }
+
+    .exhibit-item h3 {
+        font-size: 1.5rem; /* Adjust title size */
+    }
+
+    .overlay {
+        font-size: 0.7rem; /* Smaller overlay text */
+    }
+}
+
 

@@ -7,10 +7,10 @@
 
 /* Global Font */
 body {
-    font-family: 'Kodchasan', sans-serif; 
+    font-family: 'Kodchasan', sans-serif;
     font-size: 16px;
     line-height: 1.5;
-    background-color: #F5EACD; 
+    background-color: #F5EACD;
     color: #333;
 }
 
@@ -22,14 +22,14 @@ body {
     justify-content: space-between;
     padding: 20px 0px;
     position: relative;
-    z-index: 0; 
+    z-index: 0;
     width: 100%;
 }
 
 .container {
-    max-width: none; 
-    margin: 0 auto; 
-    width: 100%; 
+    max-width: none;
+    margin: 0 auto;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -43,8 +43,8 @@ body {
 }
 
 .logo span {
-    font-size: 20px; 
-    font-weight: bold; 
+    font-size: 20px;
+    font-weight: bold;
     text-decoration: none;
     color: black;
     position: relative;
@@ -53,17 +53,17 @@ body {
 }
 
 .logo img {
-    height: 145px; 
-    width: auto; 
-    margin-right: 10px; 
+    height: 145px;
+    width: auto;
+    margin-right: 10px;
     margin-top: 55px;
     position: absolute;
     z-index: 1;
-    transition: transform 0.3s ease; 
+    transition: transform 0.3s ease;
 }
 
 .logo:hover img {
-    transform: scale(1.1); 
+    transform: scale(1.1);
 }
 
 /* Navigation Menu */
@@ -133,3 +133,84 @@ body {
 .footer a:hover {
     color: black;
 }
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+    /* Adjust Navbar for Tablets */
+    .navbar {
+        flex-wrap: wrap; /* Allow content to wrap */
+    }
+
+    .container {
+        flex-direction: column; /* Stack logo and nav links vertically */
+        align-items: flex-start; /* Align left */
+        gap: 10px;
+        padding: 0 20px;
+    }
+
+    .logo span {
+        font-size: 18px; /* Adjust font size */
+        left: 0;
+        margin: 0;
+        text-align: left;
+    }
+
+    .logo img {
+        height: 100px; /* Resize logo for smaller screens */
+        margin-top: 20px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap; /* Allow wrapping */
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .nav-links a {
+        font-size: 14px; /* Adjust font size for tablets */
+    }
+
+    .cta {
+        font-size: 14px; /* Reduce button size */
+        padding: 8px 12px;
+        margin: 10px 0 0;
+    }
+}
+
+/* Mobile and Tablet Logo Adjustments */
+@media (max-width: 768px) {
+    .logo {
+        position: relative;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        margin: 0 auto;
+        padding: 10px 0;
+    }
+
+    .logo img{
+        height: 80px;
+        width: auto;
+    }
+
+    .logo span {
+        font-size: 1.3rem;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    .cta {
+        margin-top: 10px;
+    }
