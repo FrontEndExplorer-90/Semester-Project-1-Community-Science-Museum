@@ -1,9 +1,9 @@
 /* Background Wrapper */
 .background-wrapper {
     background: url('../Images/museumhome1.jpg') no-repeat center center/cover;
-    background-attachment: fixed; /* Keeps the background static during scrolling */
-    background-size: cover; /* Ensures the image scales to cover the entire page */
-    min-height: 100vh; /* Full height of the viewport */
+    background-attachment: fixed; 
+    background-size: cover;
+    min-height: 100vh; 
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -22,13 +22,13 @@
 .hero-content {
     position: absolute;
     top: 10%;
-    left: 50%; /* Horizontally centers the content */
-    transform: translate(-50%, -50%); /* Adjusts for perfect centering */
+    left: 50%; 
+    transform: translate(-50%, -50%); 
     color: black; 
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Shadow for readability */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); 
     font-family: 'Kodchasan', sans-serif;
-    font-size: 3rem; /* Adjust font size for the title */
-    line-height: 1.2; /* Adjust line height for better spacing */
+    font-size: 3rem; 
+    line-height: 1.2; 
     font-weight: bold;
 }
 
@@ -38,7 +38,7 @@
     justify-content: space-around;
     align-items: center;
     padding: 40px 20px;
-    background-color: rgba(245, 234, 205, 0.9); /* Slightly transparent beige */
+    background-color: rgba(245, 234, 205, 0.9); 
 }
 
 .highlight-box {

@@ -1,0 +1,103 @@
+/* Visit Us Page */
+.visit-us {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #F5EACD;
+    min-height: calc(100vh - 100px);
+}
+
+.visit-us h1 {
+    font-family: 'Kodchasan', sans-serif;
+    font-size: 3rem;
+    margin-bottom: 40px;
+    color: #333;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Grid Layout for Cards */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px; 
+    justify-items: center; 
+    padding: 20px;
+}
+
+/* Cards */
+.card {
+    width: 360px; 
+    height: 360px; 
+    background-color: black; 
+    border-radius: 40px; 
+    border: 2px solid black;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    text-align: center; 
+    padding: 20px; 
+    gap: 15px;
+}
+
+/* Card Text Styling */
+.card h3 {
+    font-family: 'Kodchasan', sans-serif;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.highlighted-text {
+    font-size: 1.3rem; 
+    font-weight: bold; 
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.card p {
+    font-family: 'Kodchasan', sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    color: black;
+    line-height: 1;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Individual Card Colors */
+.location {
+    background-color: #5C928A; 
+    color: black;
+}
+
+.prices {
+    background-color: #C08C66; 
+    color: black;
+}
+
+.hours {
+    background-color: #5377AA; 
+    color: black;
+}
+
+.accessibility {
+    background-color: #5C928A;
+    color: black;
+}
+
+.refreshments {
+    background-color: #C08C66;
+    color: black;
+}
+
+.souvenirs {
+    background-color: #5377AA; 
+    color: black;
+}
