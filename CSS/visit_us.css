@@ -119,8 +119,17 @@
     }
 
     .card {
-        width: 90%; /* Ensure cards fit smaller widths */
+        width: 100%; /* Ensure cards fit smaller widths */
         padding: 15px; /* Reduce padding for smaller cards */
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* Two cards per row */
+        gap: 20px; /* Space between cards */
+        justify-content: center;
+        align-items: start; /* Align cards at the top */
+        padding: 20px;
     }
 }
 
@@ -131,7 +140,7 @@
     }
 
     .highlighted-text {
-        font-size: 1rem; /* Adjust highlighted text size */
+        font-size: 0.9rem; /* Adjust highlighted text size */
     }
 
     .card p {
@@ -142,5 +151,10 @@
     .card {
         width: 100%; /* Full width for mobile screens */
         margin-bottom: 20px; /* Add space between stacked cards */
+    }
+
+    .grid {
+        grid-template-columns: 1fr; /* Stack cards vertically on smaller screens */
+        gap: 15px;
     }
 }
