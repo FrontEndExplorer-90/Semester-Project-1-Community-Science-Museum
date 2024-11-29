@@ -117,6 +117,7 @@
     .exhibit-circle-container {
         flex-direction: column; 
         gap: 20px;
+        width: 100%;
     }
 
     .circle-container {
@@ -134,7 +135,7 @@
     }
 
     .overlay {
-        font-size: 0.8rem; 
+        font-size: 0.7rem; 
     }
 }
 
