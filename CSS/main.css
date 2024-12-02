@@ -7,7 +7,7 @@
 
 /* Global Font */
 body {
-    font-family: 'Nunito', sans-serif; /* Changed from 'Kodchasan' */
+    font-family: 'Kodchasan', sans-serif;
     font-size: 16px;
     line-height: 1.5;
     background-color: #F5EACD;
@@ -53,7 +53,6 @@ header {
 
 .logo span {
     font-size: 20px;
-    font-family: 'Poppins', sans-serif; /* Changed from default */
     font-weight: bold;
     text-decoration: none;
     color: black;
@@ -89,7 +88,7 @@ header {
 
 .nav-links a {
     text-decoration: none;
-    font-family: 'Poppins', sans-serif; /* Changed from 'Inter' */
+    font-family: 'Inter', sans-serif;
     font-size: 16px;
     font-weight: bold;
     color: #333;
@@ -102,7 +101,7 @@ header {
 
 /* Plan Your Visit CTA */
 .cta {
-    font-family: 'Baloo 2', sans-serif; /* Changed from 'Inter' */
+    font-family: 'Inter', sans-serif;
     font-size: 16px;
     background-color: #C08C66;
     color: black;
@@ -123,55 +122,25 @@ header {
 
 /* Footer */
 .footer {
-    position: relative;
-    bottom: 0;
-    width: 100%;
     background-color: #F5EACD;
-    padding: 20px 0;
-    text-align: center;
-    border-top: 2px solid black;
-}
-
-/* Social Icons */
-.social-icons {
     display: flex;
     justify-content: center;
-    gap: 15px;
-    margin-bottom: 10px;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 0;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    color: #333;
 }
 
-.social-icons a {
-    display: inline-block;
-    width: 30px;
-    height: 30px;
-    transition: transform 0.3s ease;
-}
-
-.social-icons img {
-    width: 100%;
-    height: auto;
-    border-radius: 50%; /* Optional: Make icons circular */
-}
-
-.social-icons a:hover {
-    transform: scale(1.2); /* Slight zoom on hover */
-}
-
-/* Footer Links */
-.footer-links {
-    font-size: 1rem;
-    font-family: 'Nunito', sans-serif; /* Changed from default */
-    color: black;
-}
-
-.footer-links a {
-    color: black;
+.footer a {
     text-decoration: none;
-    margin: 0 10px;
+    color: black;
+    transition: color 0.3s;
 }
 
-.footer-links a:hover {
-    text-decoration: underline;
+.footer a:hover {
+    color: black;
 }
 
 /* Responsive Adjustments */
