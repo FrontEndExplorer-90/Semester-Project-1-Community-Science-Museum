@@ -47,26 +47,28 @@
         </div>
     
         <!-- Booking Form -->
-        <form class="booking-form" action="#" method="POST">
+        <form class="booking-form" action="success.html" method="GET">
             <!-- Select Date -->
             <div class="form-group">
                 <label for="date">Choose a Date:</label>
                 <input type="date" id="date" name="date" required>
             </div>
-    
+        
             <!-- Select Exhibits -->
             <div class="form-group">
-                <label for="exhibits">Choose Exhibits (max.two):</label>
-                <div class="checkbox-group">
-                    <label><input type="checkbox" name="exhibits" value="Cosmology"> Cosmology</label>
-                    <label><input type="checkbox" name="exhibits" value="Evolution"> Evolution</label>
-                    <label><input type="checkbox" name="exhibits" value="Ecology"> Ecology</label>
-                    <label><input type="checkbox" name="exhibits" value="Medicine and Biology"> Medicine and Biology</label>
-                    <label><input type="checkbox" name="exhibits" value="Robotics and AI"> Robotics and AI</label>
-                    <label class="temporary"><input type="checkbox" name="exhibits" value="Energetica"> Energetica (Special Temporary Exhibition)</label>
-                </div>
+                <fieldset>
+                    <legend>Choose Exhibits (max. two):</legend>
+                    <div class="checkbox-group">
+                        <label><input type="checkbox" name="exhibits" value="Cosmology"> Cosmology</label>
+                        <label><input type="checkbox" name="exhibits" value="Evolution"> Evolution</label>
+                        <label><input type="checkbox" name="exhibits" value="Ecology"> Ecology</label>
+                        <label><input type="checkbox" name="exhibits" value="Medicine and Biology"> Medicine and Biology</label>
+                        <label><input type="checkbox" name="exhibits" value="Robotics and AI"> Robotics and AI</label>
+                        <label><input type="checkbox" name="exhibits" value="Energetica"> Energetica (Special Temporary Exhibition)</label>
+                    </div>
+                </fieldset>
             </div>
-    
+        
             <!-- Select Time -->
             <div class="form-group">
                 <label for="time1">Choose a Time (Tour 1):</label> 
@@ -82,7 +84,7 @@
                     <option value="17:00">17:00 (Friday only)</option>
                 </select>
             </div>
-
+        
             <div class="form-group">
                 <label for="time2">Choose a Time (Tour 2):</label> 
                 <select id="time2" name="time2">
@@ -97,23 +99,23 @@
                     <option value="17:00">17:00 (Friday only)</option>
                 </select>
             </div>
-    
+        
             <!-- Select Number of People -->
             <div class="form-group">
                 <label for="people">Size of Group:</label>
                 <select id="people" name="people" required>
                     <option value="" disabled selected>Select number of people</option>
-                    <option value="1">1 </option>
-                    <option value="2">2 </option>
-                    <option value="3">3 </option>
-                    <option value="4">4 </option>
-                    <option value="5">5 </option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
                     <option value="6+">6+ (Group Booking/Please Contact Us!)</option>
                 </select>
             </div>
-    
+        
             <!-- Submit Button -->
-            <button type="success.html" class="submit-btn">Book Now</button>
+            <button type="submit">Send Message</button>
         </form>
     </main>
 

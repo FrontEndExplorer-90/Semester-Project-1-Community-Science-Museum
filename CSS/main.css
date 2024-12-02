@@ -7,7 +7,7 @@
 
 /* Global Font */
 body {
-    font-family: 'Kodchasan', sans-serif;
+    font-family: 'Nunito', sans-serif; /* Changed from 'Kodchasan' */
     font-size: 16px;
     line-height: 1.5;
     background-color: #F5EACD;
@@ -53,6 +53,7 @@ header {
 
 .logo span {
     font-size: 20px;
+    font-family: 'Poppins', sans-serif; /* Changed from default */
     font-weight: bold;
     text-decoration: none;
     color: black;
@@ -88,7 +89,7 @@ header {
 
 .nav-links a {
     text-decoration: none;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Poppins', sans-serif; /* Changed from 'Inter' */
     font-size: 16px;
     font-weight: bold;
     color: #333;
@@ -101,7 +102,7 @@ header {
 
 /* Plan Your Visit CTA */
 .cta {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Baloo 2', sans-serif; /* Changed from 'Inter' */
     font-size: 16px;
     background-color: #C08C66;
     color: black;
@@ -159,6 +160,7 @@ header {
 /* Footer Links */
 .footer-links {
     font-size: 1rem;
+    font-family: 'Nunito', sans-serif; /* Changed from default */
     color: black;
 }
 
