@@ -88,37 +88,37 @@
     filter: brightness(0.9);
 }
 
-
+/* Responsive Adjustments */
 @media (max-width: 1024px) {
     .highlights {
-        flex-wrap: wrap; 
+        flex-wrap: wrap;
         justify-content: center;
     }
 
     .highlight-box {
-        width: 250px; 
+        width: 250px;
         height: 180px;
         font-size: 1rem;
     }
 
     .hero-content {
-        font-size: 2.5rem; 
+        font-size: 2.5rem;
     }
 }
 
 @media (max-width: 768px) {
-
     .hero {
-        height: 400px; 
+        height: 400px;
     }
 
     .hero-content {
-        top: auto; 
-        bottom: 10%; 
-        transform: translateX(-50%); 
-        font-size: 1.8rem; 
+        top: auto;
+        bottom: 10%;
+        transform: translateX(-50%);
+        font-size: 1.8rem;
         line-height: 1.3;
     }
+
     /* Stack Highlights Vertically for Mobile */
     .highlights {
         flex-direction: column;
@@ -126,9 +126,10 @@
     }
 
     .highlight-box {
-        width: 90%; 
+        width: 90%;
         height: 150px;
-        font-size: 0.9rem; 
+        font-size: 0.9rem;
     }
 }
+
 
