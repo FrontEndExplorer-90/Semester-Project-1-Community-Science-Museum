@@ -14,6 +14,13 @@ body {
     color: #333;
 }
 
+header {
+    position: relative; 
+    z-index: 100; 
+    background-color: #F5EACD;
+    padding: 10px 20px;
+}
+
 /* Navigation Bar (Header) */
 .navbar {
     background-color: #F5EACD;
@@ -22,7 +29,7 @@ body {
     justify-content: space-between;
     padding: 20px 0px;
     position: relative;
-    z-index: 0;
+    z-index: 100;
     width: 100%;
 }
 
@@ -40,6 +47,8 @@ body {
     display: flex;
     align-items: center;
     text-decoration: none;
+    position: relative;
+    z-index: 1001;
 }
 
 .logo span {
@@ -58,7 +67,7 @@ body {
     margin-right: 10px;
     margin-top: 55px;
     position: absolute;
-    z-index: 1;
+    z-index: 110;
     transition: transform 0.3s ease;
 }
 
@@ -179,26 +188,34 @@ body {
 @media (max-width: 768px) {
     .logo {
         display: flex;
-        flex-direction: column; /* Stack logo and text vertically */
-        align-items: center; /* Center-align both logo and text */
-        margin-top: 20px; /* Add space from the top of the page */
-        position: relative; /* Remove absolute behavior from children */
+        flex-direction: column; 
+        align-items: center; 
+        margin-top: 20px; 
+        position: relative; 
     }
 
     .logo img {
-        height: 60px; /* Resize logo for mobile */
-        width: auto; /* Maintain aspect ratio */
-        margin: 0; /* Remove extra margins */
-        position: static; /* Prevent overlap */
+        height: 60px; 
+        width: auto; 
+        margin: 0; 
+        position: static; 
     }
 
     .logo span {
-        font-size: 1.5rem; /* Adjust text size */
-        margin-top: 10px; /* Add space between logo and text */
-        text-align: center; /* Center-align the text */
+        font-size: 1.5rem; 
+        margin-top: 10px; 
+        text-align: center; 
     }
 
     header.navbar {
-        padding-top: 20px; /* Prevent collision with the logo */
+        padding-top: 20px; 
+    }
+
+    .cta {
+        display: block; 
+        margin: 20px auto 0; 
+        font-size: 14px; 
+        padding: 8px 12px; 
+        text-align: center;
     }
 }
