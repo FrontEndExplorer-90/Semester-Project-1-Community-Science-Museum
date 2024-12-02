@@ -109,9 +109,8 @@ body {
 
 /* Responsive Design */
 @media (max-width: 1024px) {
-    /* Adjust layout for tablets */
     .content-container {
-        flex-direction: column; /* Stack the text and image vertically */
+        flex-direction: column; 
     }
 
     .about-text {
@@ -119,45 +118,44 @@ body {
     }
 
     .image-container {
-        height: 300px; /* Adjust image height for tablets */
-        flex: none; /* Allow the image to size freely */
+        height: 300px; 
+        flex: none; 
     }
 
     .about-title {
-        font-size: 2.5rem; /* Adjust title size for tablets */
+        font-size: 2.5rem; 
     }
 
     .quote {
-        font-size: 1.6rem; /* Slightly smaller quotes for tablets */
+        font-size: 1.6rem; 
     }
 }
 
 @media (max-width: 768px) {
-    /* Adjust layout for mobile */
     .content-container {
         flex-direction: column;
     }
 
     .about-text {
         padding: 20px;
-        text-align: center; /* Center-align text for smaller screens */
+        text-align: center; 
     }
 
     .image-container {
-        height: 250px; /* Adjust image height for mobile */
+        height: 250px; 
         flex: none;
     }
 
     .about-title {
-        font-size: 2rem; /* Smaller title for mobile */
+        font-size: 2rem; 
     }
 
     .quote {
-        font-size: 1.4rem; /* Further reduction for quotes */
+        font-size: 1.4rem; 
     }
 
     .footer {
-        font-size: 12px; /* Slightly smaller footer text */
+        font-size: 12px; 
         padding: 8px 0;
     }
 }

@@ -52,7 +52,7 @@
     display: flex;
     justify-content: center;
     gap: 40px;
-    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    flex-wrap: wrap; 
 }
 
 .event-card {
@@ -135,24 +135,22 @@
     margin-top: 10px;
 }
 
-/* Responsive Design */
 
-/* Tablet Styles (1024px and below) */
 @media (max-width: 1024px) {
     .events h1 {
         font-size: 1.8rem;
     }
 
     .large-card {
-        width: 90%; /* Slightly reduce the card size */
+        width: 90%; 
     }
 
     .event-card {
-        width: 45%; /* Two cards per row */
+        width: 45%; 
     }
 
     .sub-grid {
-        gap: 20px; /* Reduce gap between cards */
+        gap: 20px; 
     }
 }
 
@@ -164,20 +162,20 @@
     }
 
     .large-card {
-        width: 100%; /* Full width for large card */
+        width: 100%; 
     }
 
     .event-card {
-        width: 100%; /* Stack cards vertically */
+        width: 100%; 
     }
 
     .sub-grid {
-        flex-direction: column; /* Stack cards */
+        flex-direction: column; 
         gap: 20px;
     }
 
     .overlay p {
-        font-size: 0.9rem; /* Adjust text size */
+        font-size: 0.9rem; 
     }
 
     .overlay a {

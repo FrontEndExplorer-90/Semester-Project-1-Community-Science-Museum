@@ -78,7 +78,7 @@ body {
     top: 0;
     right: 0;
     width: 30%;
-    height: 100vh; /* Ensure the image spans the full height */
+    height: 100vh; 
 }
 
 .image-container img {
@@ -108,12 +108,9 @@ body {
     background-color: black;
 }
 
-/* Responsive Design */
-
-/* Tablet Styles (1024px and below) */
 @media (max-width: 1024px) {
     .content-container {
-        flex-wrap: wrap; /* Allow wrapping for better alignment */
+        flex-wrap: wrap; 
         justify-content: center;
         gap: 30px;
         padding: 20px;
@@ -125,21 +122,21 @@ body {
     }
 
     .privacy-title {
-        font-size: 2.5rem; /* Adjust the title size for tablets */
+        font-size: 2.5rem; 
     }
 
     .image-container {
-        position: relative; /* Move the image to stack below text */
+        position: relative; 
         width: 100%;
-        height: 300px; /* Reduce height for tablets */
+        height: 300px; 
     }
 
     .image-container img {
-        height: 100%; /* Maintain aspect ratio */
+        height: 100%; 
     }
 }
 
-/* Mobile Styles (768px and below) */
+
 @media (max-width: 768px) {
     .content-container {
         flex-direction: column;
@@ -148,28 +145,28 @@ body {
     }
 
     .privacy-text {
-        text-align: center; /* Center-align text for smaller screens */
+        text-align: center; 
     }
 
     .privacy-title {
-        font-size: 2rem; /* Further reduce title size for mobile */
+        font-size: 2rem; 
     }
 
     .image-container {
         width: 100%;
-        height: 200px; /* Further reduce image height */
+        height: 200px; 
     }
 
     .privacy-text h2 {
-        font-size: 1.6rem; /* Reduce heading size */
+        font-size: 1.6rem; 
     }
 
     .privacy-text p,
     .privacy-text ul {
-        font-size: 1rem; /* Adjust paragraph size */
+        font-size: 1rem; 
     }
 
     .footer {
-        font-size: 12px; /* Smaller footer font for mobile */
+        font-size: 12px; 
     }
 }

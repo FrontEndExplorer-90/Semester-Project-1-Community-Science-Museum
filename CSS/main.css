@@ -136,81 +136,69 @@ body {
 
 /* Responsive Adjustments */
 @media (max-width: 1024px) {
-    /* Adjust Navbar for Tablets */
     .navbar {
-        flex-wrap: wrap; /* Allow content to wrap */
+        flex-wrap: wrap; 
     }
 
     .container {
-        flex-direction: column; /* Stack logo and nav links vertically */
-        align-items: flex-start; /* Align left */
+        flex-direction: column; 
+        align-items: flex-start; 
         gap: 10px;
         padding: 0 20px;
     }
 
     .logo span {
-        font-size: 18px; /* Adjust font size */
+        font-size: 18px; 
         left: 0;
         margin: 0;
         text-align: left;
     }
 
     .logo img {
-        height: 100px; /* Resize logo for smaller screens */
+        height: 100px; 
         margin-top: 20px;
     }
 
     .nav-links {
-        flex-wrap: wrap; /* Allow wrapping */
+        flex-wrap: wrap; 
         justify-content: center;
         gap: 10px;
     }
 
     .nav-links a {
-        font-size: 14px; /* Adjust font size for tablets */
+        font-size: 14px; 
     }
 
     .cta {
-        font-size: 14px; /* Reduce button size */
+        font-size: 14px; 
         padding: 8px 12px;
         margin: 10px 0 0;
     }
 }
 
-/* Mobile and Tablet Logo Adjustments */
 @media (max-width: 768px) {
     .logo {
-        position: relative;
         display: flex;
-        flex-direction: column-reverse;
-        align-items: center;
-        margin: 0 auto;
-        padding: 10px 0;
+        flex-direction: column; /* Stack logo and text vertically */
+        align-items: center; /* Center-align both logo and text */
+        margin-top: 20px; /* Add space from the top of the page */
+        position: relative; /* Remove absolute behavior from children */
     }
 
-    .logo img{
-        height: 80px;
-        width: auto;
+    .logo img {
+        height: 60px; /* Resize logo for mobile */
+        width: auto; /* Maintain aspect ratio */
+        margin: 0; /* Remove extra margins */
+        position: static; /* Prevent overlap */
     }
 
     .logo span {
-        font-size: 1.3rem;
-        text-align: center;
-        margin-top: 20px;
+        font-size: 1.5rem; /* Adjust text size */
+        margin-top: 10px; /* Add space between logo and text */
+        text-align: center; /* Center-align the text */
     }
 
-    .navbar {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+    header.navbar {
+        padding-top: 20px; /* Prevent collision with the logo */
     }
-
-    .nav-links {
-        flex-direction: column;
-        gap: 10px;
-        margin-top: 10px;
-    }
-
-    .cta {
-        margin-top: 10px;
-    }
+}

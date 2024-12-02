@@ -108,42 +108,38 @@ body {
     z-index: -1;
 }
 
-/* Responsive Design */
-
-/* Tablet Styles (1024px and below) */
 @media (max-width: 1024px) {
     .content-container {
-        flex-wrap: wrap; /* Allow wrapping for better alignment */
+        flex-wrap: wrap; 
         padding: 20px;
     }
 
     .explore-text {
-        max-width: 100%; /* Use full width for text */
+        max-width: 100%; 
         margin-right: 0;
         padding: 20px;
-        text-align: center; /* Center-align text for smaller screens */
+        text-align: center; 
     }
 
     .image-container {
-        position: relative; /* Adjust image to stack below text */
-        width: 100%; /* Full width for the image */
-        height: 300px; /* Reduce height for tablets */
+        position: relative; 
+        width: 100%; 
+        height: 300px; 
     }
 
     .image-container img {
-        height: 100%; /* Ensure proper scaling */
+        height: 100%; 
     }
 
     .explore-title {
-        font-size: 2.5rem; /* Slightly smaller title */
+        font-size: 2.5rem; 
         margin-bottom: 20px;
     }
 }
 
-/* Mobile Styles (768px and below) */
 @media (max-width: 768px) {
     .content-container {
-        flex-direction: column; /* Stack text and image vertically */
+        flex-direction: column; 
         align-items: center;
     }
 
@@ -154,19 +150,19 @@ body {
 
     .image-container {
         width: 100%;
-        height: 250px; /* Further reduce height for mobile */
+        height: 250px; 
     }
 
     .explore-title {
-        font-size: 2rem; /* Smaller title for mobile */
+        font-size: 2rem; 
         margin-bottom: 15px;
     }
 
     .explore-text h2 {
-        font-size: 1.5rem; /* Adjust heading size */
+        font-size: 1.5rem; 
     }
 
     .explore-text p {
-        font-size: 1rem; /* Reduce paragraph font size */
+        font-size: 1rem; 
     }
 }

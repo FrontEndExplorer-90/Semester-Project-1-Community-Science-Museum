@@ -121,9 +121,6 @@ header .container {
     margin: 0 10px;
 }
 
-/* Responsive Design */
-
-/* Tablet Styles (1024px and below) */
 @media (max-width: 1024px) {
     .grid {
         grid-template-columns: 1fr;
@@ -135,43 +132,43 @@ header .container {
     }
 
     .card {
-        width: 90%; /* Adjust card width for tablets */
-        height: auto; /* Allow height to adjust based on content */
+        width: 90%; 
+        height: auto; 
         padding: 20px;
     }
 
     .get-involved h1 {
-        font-size: 2.2rem; /* Slightly reduce the title size */
+        font-size: 2.2rem; 
     }
 }
 
-/* Mobile Styles (768px and below) */
+
 @media (max-width: 768px) {
     .grid {
         grid-template-columns: 1fr;
         grid-template-rows: auto;
-        gap: 20px; /* Smaller gaps between items */
+        gap: 20px; 
     }
 
     .card {
-        width: 100%; /* Full width for smaller screens */
+        width: 100%; 
         height: auto;
-        padding: 15px; /* Reduce padding for smaller cards */
+        padding: 15px; 
     }
 
     .get-involved h1 {
-        font-size: 2rem; /* Further reduce title size */
+        font-size: 2rem; 
     }
 
     .card h2 {
-        font-size: 1.6rem; /* Adjust header size */
+        font-size: 1.6rem; 
     }
 
     .card p {
-        font-size: 0.9rem; /* Adjust paragraph size */
+        font-size: 0.9rem; 
     }
 
     .footer {
-        font-size: 12px; /* Slightly smaller footer text */
+        font-size: 12px; 
     }
 }
