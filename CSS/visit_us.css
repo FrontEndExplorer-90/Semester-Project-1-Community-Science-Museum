@@ -61,17 +61,13 @@
     font-family: 'Kodchasan', sans-serif;
     font-size: 2.5rem;
     font-weight: bold;
-    color: #333;
+    color: black;
     margin-bottom: 15px;
 }
 
 .highlighted-text {
     font-size: 1.3rem; 
     font-weight: bold; 
-}
-
-.underline {
-    text-decoration: underline;
 }
 
 .card p {
@@ -85,12 +81,12 @@
 /* Contact Link Styling */
 .contact-link {
     text-decoration: underline; 
-    color: #333; 
+    color: black; 
     font-weight: bold; 
 }
 
 .contact-link:hover {
-    color: #5377AA; 
+    color: #000000; 
     text-decoration: none; 
 }
 
