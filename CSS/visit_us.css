@@ -82,6 +82,17 @@
     line-height: 1;
 }
 
+/* Contact Link Styling */
+.contact-link {
+    text-decoration: underline; 
+    color: #333; 
+    font-weight: bold; 
+}
+
+.contact-link:hover {
+    color: #5377AA; 
+    text-decoration: none; 
+}
 
 /* Individual Card Colors */
 .location {

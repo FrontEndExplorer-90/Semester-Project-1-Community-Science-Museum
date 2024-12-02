@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book a Tour | Community Science Museum</title>
+    <!-- Link to CSS files -->
+    <link rel="stylesheet" href="CSS/main.css">
+    <link rel="stylesheet" href="CSS/book_tour.css">
+    <!-- Import Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Kodchasan:wght@400;700&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="navbar">
+        <div class="container">
+            <!-- Logo -->
+            <a href="index.html" class="logo">
+                <img src="Images/museum logo.png" alt="Community Science Museum Logo">
+                <span>Community Science Museum</span>
+            </a>
+            <!-- Navigation Links -->
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="exhibits.html">Exhibits</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="explore.html">Explore</a></li>
+                    <li><a href="get_involved.html">Get Involved</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="visit_us.html">Visit Us</a></li>
+                </ul>
+            </nav>
+            <!-- Book tour CTA -->
+            <a href="book_tour.html" class="cta">Book Guided Tour <span class="highlight">here!</span></a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="book-tour">
+        <h1>Book a Tour</h1>
+    
+        <!-- Information Section -->
+        <div class="info-section">
+            <p>Guided tour every 60 minutes in different parts of the museum. Tours can be booked online or directly in the museum and cost <strong>70kr per person</strong>.</p>
+            <p>School-class, daycare, or group of 6+? Please <a href="contact_us.html" class="contact-link">contact us</a> for more information on our guided tours!</p>
+        </div>
+    
+        <!-- Booking Form -->
+        <form class="booking-form" action="#" method="POST">
+            <!-- Select Date -->
+            <div class="form-group">
+                <label for="date">Choose a Date:</label>
+                <input type="date" id="date" name="date" required>
+            </div>
+    
+            <!-- Select Exhibits -->
+            <div class="form-group">
+                <label for="exhibits">Choose Exhibits (max.two):</label>
+                <div class="checkbox-group">
+                    <label><input type="checkbox" name="exhibits" value="Cosmology"> Cosmology</label>
+                    <label><input type="checkbox" name="exhibits" value="Evolution"> Evolution</label>
+                    <label><input type="checkbox" name="exhibits" value="Ecology"> Ecology</label>
+                    <label><input type="checkbox" name="exhibits" value="Medicine and Biology"> Medicine and Biology</label>
+                    <label><input type="checkbox" name="exhibits" value="Robotics and AI"> Robotics and AI</label>
+                    <label class="temporary"><input type="checkbox" name="exhibits" value="Energetica"> Energetica (Special Temporary Exhibition)</label>
+                </div>
+            </div>
+    
+            <!-- Select Time -->
+            <div class="form-group">
+                <label for="time">Choose a Time(Tour 1):</label>
+                <select id="time" name="time" required>
+                    <option value="" disabled selected>Select a time</option>
+                    <option value="10:00">10:00</option>
+                    <option value="11:00">11:00</option>
+                    <option value="12:00">12:00</option>
+                    <option value="13:00">13:00</option>
+                    <option value="14:00">14:00</option>
+                    <option value="15:00">15:00</option>
+                    <option value="16:00">16:00</option>
+                    <option value="17:00">17:00 (Friday only)</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="time">Choose a Time(Tour 2):</label>
+                <select id="time" name="time" required>
+                    <option value="" disabled selected>Select a time</option>
+                    <option value="10:00">10:00</option>
+                    <option value="11:00">11:00</option>
+                    <option value="12:00">12:00</option>
+                    <option value="13:00">13:00</option>
+                    <option value="14:00">14:00</option>
+                    <option value="15:00">15:00</option>
+                    <option value="16:00">16:00</option>
+                    <option value="17:00">17:00 (Friday only)</option>
+                </select>
+            </div>
+    
+            <!-- Select Number of People -->
+            <div class="form-group">
+                <label for="people">Number of People:</label>
+                <select id="people" name="people" required>
+                    <option value="" disabled selected>Select number of people</option>
+                    <option value="1">1 Person</option>
+                    <option value="2">2 People</option>
+                    <option value="3">3 People</option>
+                    <option value="4">4 People</option>
+                    <option value="5">5 People</option>
+                    <option value="6+">6+ (Group Booking)</option>
+                </select>
+            </div>
+    
+            <!-- Submit Button -->
+            <button type="submit" class="submit-btn">Book Now</button>
+        </form>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <a href="CSS/contact_us.css">Contact us</a>
+        <span>|</span>
+        <a href="privacy.html">Privacy Policy</a>
+    </footer>
+</body>
+</html>
