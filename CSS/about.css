@@ -1,4 +1,4 @@
-/* General Page Styles */
+/* General Page Styling */
 body {
     font-family: 'Kodchasan', sans-serif;
     margin: 0;
@@ -14,7 +14,7 @@ body {
     background-color: black;
     position: absolute;
     bottom: 0;
-    left: 140;
+    left: 140px;
     right: 0;
     z-index: 1;
 }
@@ -31,59 +31,161 @@ body {
 
 /* Content Layout */
 .about-page {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+    text-align: center;
+    padding: 60px 20px;
+    position: relative; 
+    z-index: 1;
+    background-image: url('../Images/BotenicalMuseumEntrance.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: calc(100vh - 100px);
+}
+
+.about-page::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(245, 234, 205, 0.7); 
+    z-index: -2; 
 }
 
 .content-container {
     display: flex;
-    flex-direction: row;
-    min-height: 100vh;
-    position: relative;
-}
-
-/* Text Content */
-.about-text {
+    justify-content: space-between;
+    align-items: flex-start;
     flex: 1;
+    gap: 40px;
     padding: 40px;
-    text-align: left;
-    z-index: 1;
 }
 
-.about-title {
-    font-size: 3rem;
+/* Left Content (Text Sections) */
+.extra-info {
+    flex: 2; 
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+/* Text Section Styling */
+.history-section, .why-visit-section, .team-section, .about-text {
+    background-color: #FAF2DF;
+    padding: 20px;
     margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-text h1 {
+    font-size: 2.5rem;
+    color: black;
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.history-section h2, .why-visit-section h2, .team-section h2, .about-text h2 {
+    font-size: 2rem;
+    color: black;
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.about-text p, .history-section p, .why-visit-section ul, .team-grid {
+    font-size: 1rem;
+    color: black;
+    line-height: 1.6;
+}
+
+/* Meet Our Team Section */
+.team-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
-    color: black;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: #FAF2DF;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.quote {
-    font-size: 1.8rem;
+/* Team Container */
+.team-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.team-grid {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap; 
+    margin-bottom: 20px;
+}
+
+.team-card {
+    width: 270px;
     text-align: center;
-    font-style: italic;
-    margin-bottom: 20px;
-    color: black;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.about-text p {
-    margin-bottom: 20px;
-    color: black;
-}
-
-/* Image Styling */
-.image-container {
-    flex: 0 0 30%;
-    position: relative;
-    height: 100vh;
-    z-index: -1;
-}
-
-.image-container img {
+.team-card img {
     width: 100%;
-    height: 100%;
+    height: 200px;
     object-fit: cover;
+}
+
+.team-card h3 {
+    font-size: 1.2rem;
+    color: #333;
+    margin: 10px 0;
+}
+
+.team-card p {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+/* Additional Team List (Right Side) */
+.additional-team {
+    flex: 1;
+    text-align: left;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 10px;
+}
+
+.additional-team h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.additional-team ul {
+    list-style: none;
+    padding: 0;
+}
+
+.additional-team li {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 10px;
+    line-height: 1.5;
 }
 
 /* Footer for About Page */
@@ -95,7 +197,6 @@ body {
     font-family: 'Inter', sans-serif;
     font-size: 14px;
     color: black;
-    z-index: 1;
 }
 
 .footer::before {
@@ -110,54 +211,60 @@ body {
 
 /* Responsive Design */
 @media (max-width: 1024px) {
-    .content-container {
+    .about-page {
         flex-direction: column; 
-    }
-
-    .about-text {
-        padding: 20px;
     }
 
     .image-container {
         height: 300px; 
-        flex: none; 
+        max-width: 100%; 
     }
 
-    .about-title {
-        font-size: 2.5rem; 
-    }
-
-    .quote {
-        font-size: 1.6rem; 
+    .team-grid {
+        flex-wrap: wrap;
+        justify-content: center;
     }
 }
 
 @media (max-width: 768px) {
-    .content-container {
-        flex-direction: column;
-    }
-
-    .header-line {
-        width: calc(100% - 100px); 
-        left: 100px; 
-    }
-
-    .about-text {
+    .extra-info {
         padding: 20px;
+    }
+
+    .team-container {
+        flex-direction: column; 
+        gap: 20px; 
+    }
+
+    .team-grid {
+        justify-content: center;
+    }
+
+    .additional-team {
+        margin-top: 20px; 
         text-align: center; 
     }
 
+    .team-card {
+        width: 100%; 
+    }
+
+    .about-page {
+        flex-direction: column; 
+    }
+
     .image-container {
-        height: 250px; 
-        flex: none;
+        max-width: 100%; 
     }
 
-    .about-title {
-        font-size: 2rem; 
+    .content-container {
+        padding: 20px; 
     }
 
-    .quote {
-        font-size: 1.4rem; 
+    .history-section h2, 
+    .why-visit-section h2, 
+    .team-section h2 {
+        font-size: 1.5rem;
     }
 
     .footer {

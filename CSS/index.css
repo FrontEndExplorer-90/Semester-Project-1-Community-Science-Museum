@@ -1,6 +1,6 @@
 /* Background Wrapper */
 .background-wrapper {
-    background: url('../Images/museumhome1.jpg') no-repeat center center/cover;
+    background: url('../Images/TRexDomeHall.jpg') no-repeat center center/cover;
     background-attachment: fixed;
     background-size: cover;
     min-height: 100vh;
@@ -24,7 +24,7 @@
     top: 10%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: black;
+    color: #fff;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
     font-family: 'Kodchasan', sans-serif;
     font-size: 3rem;
@@ -69,18 +69,18 @@
 
 /* Individual Box Colors */
 .exhibits {
-    background-color: #334F77;
-    border: 2px solid #5377AA;
+    background-color: #5377AA;
+    border: 2px solid #334F77;
 }
 
 .events {
-    background-color: #47837A;
-    border: 2px solid #5C928A;
+    background-color: #5C928A;
+    border: 2px solid #47837A;
 }
 
 .involved {
-    background-color: #BB7541;
-    border: 2px solid #C08C66;
+    background-color: #C08C66;
+    border: 2px solid #BB7541;
 }
 
 .highlight-box:hover {

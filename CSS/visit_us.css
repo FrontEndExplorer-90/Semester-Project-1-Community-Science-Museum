@@ -1,4 +1,16 @@
 /* Visit Us Page */
+
+.header-line {
+    width: calc(100% - 140px);
+    height: 3px;
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 140;
+    z-index: 1;
+}
+
 .visit-us {
     text-align: center;
     padding: 60px 20px;
