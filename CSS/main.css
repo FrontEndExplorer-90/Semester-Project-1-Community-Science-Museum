@@ -15,8 +15,8 @@ body {
 }
 
 header {
-    position: relative; 
-    z-index: 100; 
+    position: relative;
+    z-index: 100;
     background-color: #F5EACD;
     padding: 10px 20px;
 }
@@ -27,7 +27,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px 0px;
+    padding: 20px 0;
     position: relative;
     z-index: 100;
     width: 100%;
@@ -122,64 +122,93 @@ header {
 
 /* Footer */
 .footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
     background-color: #F5EACD;
+    padding: 20px 0;
+    text-align: center;
+    border-top: 2px solid black;
+}
+
+/* Social Icons */
+.social-icons {
     display: flex;
     justify-content: center;
-    align-items: center;
-    gap: 10px;
-    padding: 10px 0;
-    font-family: 'Inter', sans-serif;
-    font-size: 14px;
-    color: #333;
+    gap: 15px;
+    margin-bottom: 10px;
 }
 
-.footer a {
+.social-icons a {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease;
+}
+
+.social-icons img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+.social-icons a:hover {
+    transform: scale(1.2);
+}
+
+/* Footer Links */
+.footer-links {
+    font-size: 1rem;
+    color: black;
+}
+
+.footer-links a {
+    color: black;
     text-decoration: none;
-    color: black;
-    transition: color 0.3s;
+    margin: 0 10px;
 }
 
-.footer a:hover {
-    color: black;
+.footer-links a:hover {
+    text-decoration: underline;
 }
 
 /* Responsive Adjustments */
 @media (max-width: 1024px) {
     .navbar {
-        flex-wrap: wrap; 
+        flex-wrap: wrap;
     }
 
     .container {
-        flex-direction: column; 
-        align-items: flex-start; 
+        flex-direction: column;
+        align-items: flex-start;
         gap: 10px;
         padding: 0 20px;
     }
 
     .logo span {
-        font-size: 18px; 
+        font-size: 18px;
         left: 0;
         margin: 0;
         text-align: left;
     }
 
     .logo img {
-        height: 100px; 
+        height: 100px;
         margin-top: 20px;
     }
 
     .nav-links {
-        flex-wrap: wrap; 
+        flex-wrap: wrap;
         justify-content: center;
         gap: 10px;
     }
 
     .nav-links a {
-        font-size: 14px; 
+        font-size: 14px;
     }
 
     .cta {
-        font-size: 14px; 
+        font-size: 14px;
         padding: 8px 12px;
         margin: 10px 0 0;
     }
@@ -188,34 +217,34 @@ header {
 @media (max-width: 768px) {
     .logo {
         display: flex;
-        flex-direction: column; 
-        align-items: center; 
-        margin-top: 20px; 
-        position: relative; 
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+        position: relative;
     }
 
     .logo img {
-        height: 60px; 
-        width: auto; 
-        margin: 0; 
-        position: static; 
+        height: 60px;
+        width: auto;
+        margin: 0;
+        position: static;
     }
 
     .logo span {
-        font-size: 1.5rem; 
-        margin-top: 10px; 
-        text-align: center; 
+        font-size: 1.5rem;
+        margin-top: 10px;
+        text-align: center;
     }
 
     header.navbar {
-        padding-top: 20px; 
+        padding-top: 20px;
     }
 
     .cta {
-        display: block; 
-        margin: 20px auto 0; 
-        font-size: 14px; 
-        padding: 8px 12px; 
+        display: block;
+        margin: 20px auto 0;
+        font-size: 14px;
+        padding: 8px 12px;
         text-align: center;
     }
 }

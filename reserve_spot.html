@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Reserve your spot for our special events">
+    <title>Reserve Your Spot | Community Science Museum</title>
+    <!-- Link to CSS files -->
+    <link rel="stylesheet" href="CSS/main.css">
+    <link rel="stylesheet" href="CSS/reserve_spot.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Kodchasan:wght@400;700&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="Images/museum logo.png" alt="Community Science Museum Logo">
+                <span>Community Science Museum</span>
+            </a>
+        </div>
+    </header>
+
+    <!-- Reserve Spot Form -->
+    <main class="reserve-spot">
+        <h1>Reserve Your Spot</h1>
+        <p>Join us for our special events in December! Secure your place now for an unforgettable experience.</p>
+
+        <form class="reservation-form" action="success.html" method="GET">
+            <!-- Event Selection -->
+            <div class="form-group">
+                <label for="event">Select an Event:</label>
+                <select id="event" name="event" required>
+                    <option value="" disabled selected>Choose an event</option>
+                    <option value="professor-lecture-12th">Professor Lecture (Dec 12th 11:00am - 11:45am)</option>
+                    <option value="professor-lecture-13th">Professor Lecture (Dec 13th 09:00am - 10:45am)</option>
+                    <option value="professor-lecture-15th">Professor Lecture (Dec 15th 02:00pm - 03:45pm)</option>
+                    <option value="night-museum-6th">Night at the Museum (Dec 6th 08:00pm - Dec 7th 08:00am)</option>
+                </select>
+            </div>
+
+            <!-- Number of Guests -->
+            <div class="form-group">
+                <label for="guests">Number of Guests:</label>
+                <select id="guests" name="guests" required>
+                    <option value="" disabled selected>Select number of guests</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6+">6+ (Group Booking)</option>
+                </select>
+            </div>
+
+            <!-- Your Information -->
+            <div class="form-group">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit" class="submit-button">Reserve Spot</button>
+        </form>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="social-icons">
+            <a href="#" target="_blank" aria-label="Facebook">
+                <img src="Images/icons8-facebook-64.png" alt="Facebook">
+            </a>
+            <a href="#" target="_blank" aria-label="Instagram">
+                <img src="Images/icons8-instagram-64.png" alt="Instagram">
+            </a>
+            <a href="#" target="_blank" aria-label="X">
+                <img src="Images/icons8-twitterx-48.png" alt="X">
+            </a>
+            <a href="#" target="_blank" aria-label="TikTok">
+                <img src="Images/icons8-tiktok-64.png" alt="TikTok">
+            </a>
+        </div>
+        <div class="footer-links">
+            <a href="contact_us.html">Contact us</a>
+            <span>|</span>
+            <a href="privacy.html">Privacy Policy</a>
+        </div>
+    </footer>
+</body>
+</html>
