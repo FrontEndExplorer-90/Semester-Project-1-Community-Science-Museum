@@ -1,13 +1,17 @@
-/* Exhibits Section */
-.exhibits {
-    text-align: center;
-    padding: 60px 20px;
+/* Exhibits Page Styles */
+
+/* Exhibits Page Styles */
+
+body {
+    font-family: 'Kodchasan', sans-serif;
+    margin: 0;
+    padding: 0;
     background-color: #F5EACD;
-    min-height: calc(100vh - 100px);
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: flex-start; 
+    min-height: 100vh; 
 }
 
 .header-line {
@@ -20,133 +24,324 @@
     z-index: 1;
 }
 
-.exhibits h1 {
-    font-family: 'Kodchasan', sans-serif;
-    font-size: 3.6rem;
-    margin-bottom: 40px;
-    color: #333;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-/* Exhibit Circles */
-.exhibit-circle-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap; 
-    gap: 40px;
-    max-width: 1200px;
-}
-
-.exhibit-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
-
-.circle-container {
+.navbar {
     position: relative;
-    width: 370px;
-    height: 370px;
-    border-radius: 50%;
-    overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    z-index: 100;
+    background-color: #F5EACD;
+    padding: 10px 20px;
 }
 
-.circle-container img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 50%;
-}
-
-.circle-container:hover {
-    transform: scale(1.05);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-}
-
-/* Overlay */
-.overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.8);
-    color: #fff;
-    font-family: 'Kodchasan', sans-serif;
-    font-size: 0.9rem;
-    padding: 20px;
-    box-sizing: border-box;
-    text-align: center;
+.logo {
     display: flex;
     align-items: center;
-    justify-content: center;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-    border-radius: 50%;
+    text-decoration: none;
+    position: relative;
+    z-index: 1001;
 }
 
-.circle-container:hover .overlay {
-    opacity: 1;
+.logo img {
+    height: 145px;
+    width: auto;
+    margin-right: 10px;
+    margin-top: 55px;
+    position: absolute;
+    z-index: 110;
+    transition: transform 0.3s ease;
 }
 
-/* Exhibit Title */
-.exhibit-item h2 {
-    font-family: 'Kodchasan', sans-serif;
-    font-size: 1.8rem;
+.logo span {
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
     color: black;
-    margin-top: 15px;
+    position: relative;
+    left: 140px;
+    margin-top: 10px;
+}
+
+.logo:hover img {
+    transform: scale(1.1);
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: black;
+}
+
+.cta {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    background-color: #C08C66;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px 10px;
+    transition: background-color 0.3s, color 0.3s;
+    text-align: center;
+    margin-right: 30px;
+}
+
+.cta:hover {
+    background-color: #BB7541;
+    color: black;
+}
+
+/* Exhibits Page Styling */
+.exhibits-page {
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: flex-start; 
+    width: 100%;
+    max-width: 1200px; 
+    margin: 0 auto; 
+    padding: 40px 20px;
+    text-align: center; 
+}
+
+/* Title and Description */
+.exhibits-title {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: black;
     text-align: center;
 }
 
-@media (max-width: 1024px) {
-    .exhibit-circle-container {
-        gap: 30px;
-    }
-
-    .circle-container {
-        width: 340px; 
-        height: 340px;
-    }
-
-    .exhibits h1 {
-        font-size: 3rem; 
-    }
-
-    .overlay {
-        font-size: 1.0rem; 
-        padding: 15px;
-    }
+.exhibits-description {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 40px;
+    text-align: center;
 }
 
+/* Floor Sections */
+.floor-section {
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: flex-start; 
+    max-width: 1000px; 
+    margin: 40px auto;
+    padding: 0 20px;
+    text-align: center; 
+}
+
+.floor-title {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #222;
+    text-align: center;
+}
+
+.floor-description {
+    font-size: 1rem;
+    color: #444;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Map Container */
+.map-container {
+    position: relative;
+    display: inline-block;
+    margin: 20px auto;
+    max-width: 80%;
+}
+
+.map-container img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Orange Dots */
+.dot {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #ff7f26;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    z-index: 10;
+}
+
+.dot:hover {
+    transform: scale(1.3);
+}
+
+/* Dot Positions */
+.cafe {
+    top: 18%;
+    left: 68%;
+}
+
+.planetarium {
+    top: 26.9%;
+    left: 47.5%;
+}
+
+.cosmology {
+    top: 46.9%;
+    left: 64.8%;
+}
+
+.playground {
+    top: 68.5%;
+    left: 60.3%;
+}
+
+/* Info Container */
+.info-container {
+    position: relative;
+    margin-top: 20px;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 300px;
+    gap: 20px;
+}
+
+/* Info Content (Initially Hidden) */
+.info-content {
+    display: none; /* Hidden by default */
+    opacity: 0;
+    transform: scale(0.9);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    position: absolute; /* Position relative to parent */
+    z-index: 20;
+    width: 300px;
+    background-color: white;
+    border: 2px solid orange;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    text-align: center;
+}
+
+.info-content img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.info-content p {
+    margin-top: 10px;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+/* Show Content on Hover */
+.dot.cafe:hover ~ .info-container #cafe,
+.dot.planetarium:hover ~ .info-container #planetarium,
+.dot.cosmology:hover ~ .info-container #cosmology,
+.dot.playground:hover ~ .info-container #playground {
+    display: block;
+    opacity: 1;
+    transform: scale(1);
+}
+
+/* Footer Adjustments */
+.footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    background-color: #F5EACD;
+    padding: 20px 0;
+    text-align: center;
+    border-top: 2px solid black;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+.social-icons img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.social-icons a:hover {
+    transform: scale(1.2);
+}
+
+.footer-links {
+    font-size: 1rem;
+    color: black;
+}
+
+.footer-links a {
+    color: black;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .exhibits-title {
+        font-size: 2.5rem;
+    }
+
+    .floor-title {
+        font-size: 1.8rem;
+    }
+
+    .floor-description {
+        font-size: 1rem;
+    }
+
+    .map-container img {
+        max-width: 90%; /* Slightly smaller for mid-sized devices */
+    }
+
+    .floor-section {
+        padding: 0 20px; /* Add padding for smaller screens */
+    }
+}
 
 @media (max-width: 768px) {
-    .exhibit-circle-container {
-        flex-direction: column; 
-        gap: 20px;
-        width: 100%;
+    .exhibits-title {
+        font-size: 2rem;
     }
 
-    .circle-container {
-        width: 300px; 
-        height: 300px;
-    }
-
-    .exhibits h1 {
-        font-size: 2.4rem; 
-        margin-bottom: 20px;
-    }
-
-    .exhibit-item h3 {
+    .floor-title {
         font-size: 1.6rem;
     }
 
-    .overlay {
-        font-size: 0.7rem; 
+    .floor-description {
+        font-size: 0.9rem;
+    }
+
+    .map-container img {
+        max-width: 100%;
+        border-radius: 5px;
     }
 }
-
-

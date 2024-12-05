@@ -4,22 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Book a Tour | Community Science Museum</title>
-    <!-- Link to CSS files -->
     <link rel="stylesheet" href="CSS/main.css">
     <link rel="stylesheet" href="CSS/book_tour.css">
-    <!-- Import Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Kodchasan:wght@400;700&family=Inter:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Header -->
     <header class="navbar">
         <div class="container">
-            <!-- Logo -->
             <a href="index.html" class="logo">
                 <img src="Images/museum logo.png" alt="Community Science Museum Logo">
                 <span>Community Science Museum</span>
             </a>
-            <!-- Navigation Links -->
             <nav>
                 <ul class="nav-links">
                     <li><a href="index.html" class="active">Home</a></li>
@@ -31,30 +26,25 @@
                     <li><a href="visit_us.html">Visit Us</a></li>
                 </ul>
             </nav>
-            <!-- Book tour CTA -->
             <a href="book_tour.html" class="cta">Book Guided Tour <span class="highlight">here!</span></a>
         </div>
     </header>
 
-    <!-- Main Content -->
     <main class="book-tour">
         <h1>Book a Tour</h1>
-    
-        <!-- Information Section -->
+
         <div class="info-section">
             <p>Guided tour every 60 minutes in different parts of the museum. Tours can be booked online or directly in the museum and cost <strong>70kr per person</strong>.</p>
             <p>School-class, daycare, or group of 6+? Please <a href="contact_us.html" class="contact-link">contact us</a> for more information on our guided tours!</p>
         </div>
     
-        <!-- Booking Form -->
         <form class="booking-form" action="success.html" method="GET">
-            <!-- Select Date -->
+            
             <div class="form-group">
                 <label for="date">Choose a Date:</label>
                 <input type="date" id="date" name="date" required>
             </div>
         
-            <!-- Select Exhibits -->
             <div class="form-group">
                 <fieldset>
                     <legend>Choose Exhibits (max. two):</legend>
@@ -69,7 +59,6 @@
                 </fieldset>
             </div>
         
-            <!-- Select Time -->
             <div class="form-group">
                 <label for="time1">Choose a Time (Tour 1):</label> 
                 <select id="time1" name="time1" required> 
@@ -100,7 +89,6 @@
                 </select>
             </div>
         
-            <!-- Select Number of People -->
             <div class="form-group">
                 <label for="people">Size of Group:</label>
                 <select id="people" name="people" required>
@@ -114,12 +102,10 @@
                 </select>
             </div>
         
-            <!-- Submit Button -->
             <a href="success.html" class="button">Book Tour</a>
         </form>
     </main>
 
-    <!-- Footer -->
     <footer class="footer">
         <div class="social-icons">
             <a href="#" target="_blank" aria-label="Facebook">
@@ -135,6 +121,7 @@
                 <img src="Images/icons8-tiktok-64.png" alt="TikTok">
             </a>
         </div>
+        
         <div class="footer-links">
             <a href="contact_us.html">Contact us</a>
             <span>|</span>

@@ -3,28 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Explore our permanent exhibit spaces.">
-    <title>Exhibits | Our Permanent Exhibitions</title>
-    <!-- Link to CSS -->
+    <meta name="description" content="Welcome to the Community Science Museum!">
+    <title>Exhibits | Community Science Museum</title>
     <link rel="stylesheet" href="CSS/main.css">
     <link rel="stylesheet" href="CSS/exhibits.css">
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Kodchasan:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Kodchasan:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Navigation Bar -->
     <header class="navbar">
         <div class="container">
-            <!-- Logo -->
             <a href="index.html" class="logo">
                 <img src="Images/museum logo.png" alt="Community Science Museum Logo">
                 <span>Community Science Museum</span>
             </a>
-            <!-- Navigation Links -->
             <nav>
                 <ul class="nav-links">
-                    <li><a href="index.html" class="active">Home</a></li>
-                    <li><a href="exhibits.html">Exhibits</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="exhibits.html" class="active">Exhibits</a></li>
                     <li><a href="events.html">Events</a></li>
                     <li><a href="explore.html">Explore</a></li>
                     <li><a href="get_involved.html">Get Involved</a></li>
@@ -32,66 +27,76 @@
                     <li><a href="visit_us.html">Visit Us</a></li>
                 </ul>
             </nav>
-            <!-- Book tour CTA -->
             <a href="book_tour.html" class="cta">Book Guided Tour <span class="highlight">here!</span></a>
         </div>
-
+        
         <div class="header-line"></div>
     </header>
 
-    <!-- Exhibits Section -->
-    <section class="exhibits">
-        <h1>Our permanent Exhibit Spaces</h1>
-        <div class="exhibit-circle-container">
-            <div class="exhibit-item">
-                <div class="circle-container">
-                    <img src="Images/cosmology.jpg" alt="Cosmology">
-                    <div class="overlay">
-                        <p>‘The Sky Above Us’, explores the night sky and what we can see and know about the universe around us. We’ll locate the various constellations and galaxies and learn about the early navigators who used the stars to travel by. Come along on the journey : from early Arab traders to Galileo’s telescope, to the latest exploration of the planets in our solar system.</p>
-                    </div>
-                </div>
-                <h2>Cosmology</h2>
-            </div>
-            <div class="exhibit-item">
-                <div class="circle-container">
-                    <img src="Images/evolution.jpg" alt="Evolution">
-                    <div class="overlay">
-                        <p>For centuries, philosophers and scientists have wrestled with the question of our origins. Where do we come from and how did we get here? Since Darwin proposed his theory of evolution, we were able to explore and understand our place in this world. Discover the origins of life on this planet and how the species we know today have evolved.</p>
-                    </div>
-                </div>
-                <h2>Evolution</h2>
-            </div>
-            <div class="exhibit-item">
-                <div class="circle-container">
-                    <img src="Images/Ecology.jpg" alt="Ecology">
-                    <div class="overlay">
-                        <p>As we learn more and more of the impact humans are having on the planet, the more important it becomes that scientists explore how to create a sustainable future for the planet. In our ecology section, we unpack the dangers we face including global warming, extinction of species, and pollution.</p>
-                    </div>
-                </div>
-                <h2>Ecology</h2>
-            </div>
-            <div class="exhibit-item">
-                <div class="circle-container">
-                    <img src="Images/medicine and biology.jpg" alt="Biology and Medicine">
-                    <div class="overlay">
-                        <p>From micro-organisms to the human body, breakthroughs in biology are offering unique insights into the tiny world. Explore the history of medicine and major discoveries like penicillin and the first heart transplant.</p>
-                    </div>
-                </div>
-                <h2>Biology and Medicine</h2>
-            </div>
-            <div class="exhibit-item">
-                <div class="circle-container">
-                    <img src="Images/Robotics and Ai.jpg" alt="Robotics and AI">
-                    <div class="overlay">
-                        <p>The information revolution is here, and robotics and artificial intelligence are the science of the future. Explore the applications of AI and robotics, and say hello to Rob the Robot!</p>
-                    </div>
-                </div>
-                <h2>Robotics and AI</h2>
-            </div>
-        </div>
-    </section>
+    <main class="exhibits-page">
+        <h1 class="exhibits-title">Explore Our Exhibits</h1>
+        <p class="exhibits-description">
+            Discover the wonders of science through our multi-level museum! Use the floor maps below to explore each section and learn more about what awaits you.
+        </p>
 
-    <!-- Footer -->
+        <!-- Ground Floor Section -->
+        <section class="floor-section">
+            <h2 class="floor-title">Ground Floor</h2>
+            <p class="floor-description">Start your journey on the ground floor, home to the Café, Planetarium, Cosmology Exhibit, and Indoor Playground!</p>
+            
+            <!-- Ground Floor Map -->
+            <div class="map-container">
+                <!-- Map Image -->
+                <img src="Images/MapOfGroundFloor.jpg" alt="Ground Floor Map">
+            
+                <!-- Orange Dots -->
+                <div class="dot cafe"></div>
+                <div class="dot planetarium"></div>
+                <div class="dot cosmology"></div>
+                <div class="dot playground"></div>
+            </div>
+            
+            <!-- Info Container -->
+            <div class="info-container">
+                <div class="info-content" id="cafe">
+                    <img src="Images/CafeMuseum.jpg" alt="Cafe">
+                    <p><strong>Café:</strong> Enjoy fresh snacks, coffee, and meals in a cozy setting.</p>
+                </div>
+                <div class="info-content" id="planetarium">
+                    <img src="Images/Planetarium11.jpg" alt="Planetarium">
+                    <p><strong>Planetarium:</strong> Explore the wonders of the universe in our immersive dome theater.</p>
+                </div>
+                <div class="info-content" id="cosmology">
+                    <img src="Images/cosmology.jpg" alt="Cosmology Exhibit">
+                    <p><strong>Cosmology Exhibit:</strong> Discover constellations, galaxies, and the history of space exploration.</p>
+                </div>
+                <div class="info-content" id="playground">
+                    <img src="Images/PlaygroundHappy.jpg" alt="Indoor Playground">
+                    <p><strong>Indoor Playground:</strong> A safe and fun space for kids to play while parents take a break.</p>
+                </div>
+            </div>
+            
+        </section>
+
+        <!-- First Floor Section -->
+        <section class="floor-section">
+            <h2 class="floor-title">First Floor</h2>
+            <p class="floor-description">The first floor features the Planetarium, special exhibit spaces, and areas for interactive learning.</p>
+            <div class="map-container">
+                <img src="Images/MapFirstFloor.jpg" alt="First Floor Map">
+            </div>
+        </section>
+
+        <!-- Second Floor Section -->
+        <section class="floor-section">
+            <h2 class="floor-title">Second Floor</h2>
+            <p class="floor-description">Visit the second floor for the Robotics and AI Exhibit, the Botanical Gardens, and the Insects Exhibition.</p>
+            <div class="map-container">
+                <img src="Images/MapOfSecondFloor.jpg" alt="Second Floor Map">
+            </div>
+        </section>
+    </main>
+
     <footer class="footer">
         <div class="social-icons">
             <a href="#" target="_blank" aria-label="Facebook">
@@ -107,6 +112,7 @@
                 <img src="Images/icons8-tiktok-64.png" alt="TikTok">
             </a>
         </div>
+        
         <div class="footer-links">
             <a href="contact_us.html">Contact us</a>
             <span>|</span>
@@ -115,4 +121,6 @@
     </footer>
 </body>
 </html>
-   
+
+
+    

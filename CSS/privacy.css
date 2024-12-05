@@ -8,55 +8,54 @@ body {
     object-fit: cover;
 }
 
-/* Header Line */
-.header-line {
-    width: 100%;
-    height: 3px;
-    background-color: black;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    z-index: 1;
-}
-
-/* Navbar and Logo */
-.navbar {
-    position: relative;
-}
-
-.logo {
-    position: relative;
-    z-index: 10;
-}
-
-/* Content Layout */
+/* Privacy Page Styles */
 .privacy-page {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    flex-direction: column; 
+    text-align: center; 
+    padding: 20px;
+    position: relative;
+    z-index: 1;
+    background-image: url('../Images/InformationPoint.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 100vh; 
 }
 
+.privacy-page::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(245, 234, 205, 0.8); 
+    z-index: -1;
+}
+
+/* Content Container */
 .content-container {
     display: flex;
-    position: relative;
-    min-height: 100vh;
-    align-items: flex-start;
-    justify-content: space-between;
-    padding: 40px;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+    padding: 20px;
+    max-width: 800px; 
     box-sizing: border-box;
-    gap: 20px; /* Added for better spacing */
 }
 
+/* Privacy Text Styles */
 .privacy-text {
-    flex: 1;
-    max-width: 60%;
-    padding-right: 20px;
+    text-align: left; 
+    font-weight: bold;
 }
 
 .privacy-title {
     font-size: 3rem;
     margin-bottom: 20px;
-    text-align: center;
     color: black;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
 }
@@ -71,22 +70,6 @@ body {
 .privacy-text ul {
     margin-bottom: 20px;
     color: black;
-}
-
-/* Image Styling */
-.image-container {
-    position: absolute; 
-    top: 0;
-    right: 0;
-    width: 30%;
-    height: 100%;  
-    z-index: 0;
-}
-
-.image-container img {
-    width: 100%;
-    height: 100%; 
-    object-fit: cover; 
 }
 
 /* Footer */
@@ -110,53 +93,24 @@ body {
     background-color: black;
 }
 
+/* Responsive Design */
 @media (max-width: 1024px) {
     .content-container {
-        flex-wrap: wrap; 
-        justify-content: center;
-        gap: 30px;
         padding: 20px;
-    }
-
-    .privacy-text {
-        max-width: 100%;
-        padding: 0;
     }
 
     .privacy-title {
         font-size: 2.5rem; 
     }
-
-    .image-container {
-        position: relative; 
-        width: 100%;
-        height: 300px; 
-    }
-
-    .image-container img {
-        height: 100%; 
-    }
 }
-
 
 @media (max-width: 768px) {
     .content-container {
-        flex-direction: column;
-        align-items: center;
         padding: 15px;
-    }
-
-    .privacy-text {
-        text-align: center; 
     }
 
     .privacy-title {
         font-size: 2rem; 
-    }
-
-    .image-container {
-        width: 100%;
-        height: 200px; 
     }
 
     .privacy-text h2 {

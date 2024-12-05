@@ -307,13 +307,13 @@
     }
 
     .calendar {
-        grid-template-columns: repeat(7, 1fr); /* Keep 7 columns for tablets */
-        gap: 8px; /* Reduce gap size */
+        grid-template-columns: repeat(7, 1fr); 
+        gap: 8px;
     }
 
     .day, .date {
-        font-size: 0.9rem; /* Smaller text */
-        padding: 8px; /* Reduce padding */
+        font-size: 0.9rem; 
+        padding: 8px; 
     }
 }
 

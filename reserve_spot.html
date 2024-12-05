@@ -5,14 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Reserve your spot for our special events">
     <title>Reserve Your Spot | Community Science Museum</title>
-    <!-- Link to CSS files -->
     <link rel="stylesheet" href="CSS/main.css">
     <link rel="stylesheet" href="CSS/reserve_spot.css">
-    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Kodchasan:wght@400;700&family=Inter:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Header -->
     <header class="navbar">
         <div class="container">
             <a href="index.html" class="logo">
@@ -22,13 +19,12 @@
         </div>
     </header>
 
-    <!-- Reserve Spot Form -->
     <main class="reserve-spot">
         <h1>Reserve Your Spot</h1>
         <p>Join us for our special events in December! Secure your place now for an unforgettable experience.</p>
 
         <form class="reservation-form" action="success_reservation.html" method="GET">
-            <!-- Event Selection -->
+
             <div class="form-group">
                 <label for="event">Select an Event:</label>
                 <select id="event" name="event" required>
@@ -40,7 +36,6 @@
                 </select>
             </div>
 
-            <!-- Number of Guests -->
             <div class="form-group">
                 <label for="guests">Number of Guests:</label>
                 <select id="guests" name="guests" required>
@@ -54,7 +49,6 @@
                 </select>
             </div>
 
-            <!-- Your Information -->
             <div class="form-group">
                 <label for="name">Your Name:</label>
                 <input type="text" id="name" name="name" placeholder="Enter your full name" required>
@@ -65,12 +59,10 @@
                 <input type="email" id="email" name="email" placeholder="Enter your email address" required>
             </div>
 
-            <!-- Submit Button -->
             <button type="submit" class="submit-button">Reserve Spot</button>
         </form>
     </main>
 
-    <!-- Footer -->
     <footer class="footer">
         <div class="social-icons">
             <a href="#" target="_blank" aria-label="Facebook">
@@ -86,6 +78,7 @@
                 <img src="Images/icons8-tiktok-64.png" alt="TikTok">
             </a>
         </div>
+        
         <div class="footer-links">
             <a href="contact_us.html">Contact us</a>
             <span>|</span>
