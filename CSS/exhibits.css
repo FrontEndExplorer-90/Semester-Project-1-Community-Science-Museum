@@ -1,17 +1,14 @@
-/* Exhibits Page Styles */
-
-/* Exhibits Page Styles */
-
+/* General Styling */
 body {
     font-family: 'Kodchasan', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #F5EACD;
     display: flex;
-    flex-direction: column; 
-    align-items: center; 
-    justify-content: flex-start; 
-    min-height: 100vh; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
 }
 
 .header-line {
@@ -104,15 +101,15 @@ body {
 
 /* Exhibits Page Styling */
 .exhibits-page {
-    display: flex; 
-    flex-direction: column; 
-    align-items: center; 
-    justify-content: flex-start; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
     width: 100%;
-    max-width: 1200px; 
-    margin: 0 auto; 
+    max-width: 1200px;
+    margin: 0 auto;
     padding: 40px 20px;
-    text-align: center; 
+    text-align: center;
 }
 
 /* Title and Description */
@@ -132,14 +129,14 @@ body {
 
 /* Floor Sections */
 .floor-section {
-    display: flex; 
-    flex-direction: column; 
-    align-items: center; 
-    justify-content: flex-start; 
-    max-width: 1000px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    max-width: 1000px;
     margin: 40px auto;
     padding: 0 20px;
-    text-align: center; 
+    text-align: center;
 }
 
 .floor-title {
@@ -159,26 +156,30 @@ body {
 /* Map Container */
 .map-container {
     position: relative;
-    display: inline-block;
-    margin: 20px auto;
-    max-width: 80%;
+    margin: 20px;
+    width: 60%;
 }
 
 .map-container img {
     width: 100%;
+    display: block;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* Orange Dots */
+.info-toggle {
+    display: none; 
+}
+
+/* Dots (Red) */
 .dot {
     position: absolute;
-    width: 20px;
-    height: 20px;
+    width: 22px;
+    height: 22px;
     background-color: #ff7f26;
     border-radius: 50%;
     cursor: pointer;
-    transition: transform 0.2s ease;
+    transition: transform 0.5s ease;
     z-index: 10;
 }
 
@@ -187,121 +188,106 @@ body {
 }
 
 /* Dot Positions */
-.cafe {
-    top: 18%;
-    left: 68%;
+.dot.cafe {
+    top: 17.7%; 
+    left: 67.7%; 
 }
 
-.planetarium {
-    top: 26.9%;
-    left: 47.5%;
+.dot.planetarium {
+    top: 26.4%; 
+    left: 47.1%; 
 }
 
-.cosmology {
-    top: 46.9%;
-    left: 64.8%;
+.dot.cosmology {
+    top: 46.9%; 
+    left: 64.2%; 
 }
 
-.playground {
-    top: 68.5%;
-    left: 60.3%;
+.dot.playground {
+    top: 68.2%; 
+    left: 59.8%; 
 }
 
-/* Info Container */
-.info-container {
-    position: relative;
-    margin-top: 20px;
-    max-width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: left;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    height: 300px;
-    gap: 20px;
-}
-
-/* Info Content (Initially Hidden) */
-.info-content {
-    display: none; /* Hidden by default */
-    opacity: 0;
-    transform: scale(0.9);
-    transition: opacity 0.3s ease, transform 0.3s ease;
-    position: absolute; /* Position relative to parent */
+/* Hover Images (Appear On Map) */
+.info-image {
+    display: none;
+    position: absolute;
+    width: 150px;
+    height: 150px;
     z-index: 20;
-    width: 300px;
-    background-color: white;
-    border: 2px solid orange;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    padding: 20px;
-    text-align: center;
-}
-
-.info-content img {
-    max-width: 100%;
-    border-radius: 8px;
-}
-
-.info-content p {
-    margin-top: 10px;
-    font-size: 1rem;
-    line-height: 1.5;
-}
-
-/* Show Content on Hover */
-.dot.cafe:hover ~ .info-container #cafe,
-.dot.planetarium:hover ~ .info-container #planetarium,
-.dot.cosmology:hover ~ .info-container #cosmology,
-.dot.playground:hover ~ .info-container #playground {
-    display: block;
-    opacity: 1;
-    transform: scale(1);
-}
-
-/* Footer Adjustments */
-.footer {
-    position: relative;
-    bottom: 0;
-    width: 100%;
-    background-color: #F5EACD;
-    padding: 20px 0;
-    text-align: center;
-    border-top: 2px solid black;
-}
-
-.social-icons {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    margin-bottom: 10px;
-}
-
-.social-icons img {
-    width: 100%;
-    height: auto;
     border-radius: 50%;
-    transition: transform 0.3s ease;
 }
 
-.social-icons a:hover {
-    transform: scale(1.2);
+.info-image img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 2px solid black;
+    object-fit: cover;
 }
 
-.footer-links {
+/* Specific Image Positions */
+.info-image.cafe {
+    top: 14%;
+    left: 65%;
+}
+
+.info-image.planetarium {
+    top: 24%;
+    left: 45%;
+}
+
+.info-image.cosmology {
+    top: 44%;
+    left: 63%;
+}
+
+.info-image.playground {
+    top: 64.2%;
+    left: 58%;
+}
+
+/* Info Container on Right */
+.info-container {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: -40%;
+    max-width: 30%;
+    background-color: rgb(247, 246, 246);
+    border: 2px solid #409286;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: left;
+    z-index: 30;
+}
+
+.info-container p {
     font-size: 1rem;
-    color: black;
+    color: #444;
+    line-height: 1.5;
+    margin: 0;
 }
 
-.footer-links a {
-    color: black;
-    text-decoration: none;
-    margin: 0 10px;
+#cafe-radio:checked ~ .info-image.cafe,
+#cafe-radio:checked ~ .info-container.cafe {
+    display: block;
 }
 
-.footer-links a:hover {
-    text-decoration: underline;
+#planetarium-radio:checked ~ .info-image.planetarium,
+#planetarium-radio:checked ~ .info-container.planetarium {
+    display: block;
+}
+
+#cosmology-radio:checked ~ .info-image.cosmology,
+#cosmology-radio:checked ~ .info-container.cosmology {
+    display: block;
+}
+
+#playground-radio:checked ~ .info-image.playground,
+#playground-radio:checked ~ .info-container.playground {
+    display: block;
 }
 
 /* Responsive Design */
@@ -319,11 +305,11 @@ body {
     }
 
     .map-container img {
-        max-width: 90%; /* Slightly smaller for mid-sized devices */
+        max-width: 90%; 
     }
 
     .floor-section {
-        padding: 0 20px; /* Add padding for smaller screens */
+        padding: 0 20px; 
     }
 }
 

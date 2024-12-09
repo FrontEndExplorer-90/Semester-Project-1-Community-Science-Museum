@@ -42,41 +42,58 @@
         <!-- Ground Floor Section -->
         <section class="floor-section">
             <h2 class="floor-title">Ground Floor</h2>
-            <p class="floor-description">Start your journey on the ground floor, home to the Café, Planetarium, Cosmology Exhibit, and Indoor Playground!</p>
-            
-            <!-- Ground Floor Map -->
+            <p class="floor-description">
+                Start your journey on the ground floor, home to the Café, Planetarium, Cosmology Exhibit, and Indoor Playground!
+            </p>
+        
+            <!-- Default Reset Radio Button -->
+            <input type="radio" name="info-toggle" id="reset-radio" class="info-toggle" checked>
+        
             <div class="map-container">
                 <!-- Map Image -->
                 <img src="Images/MapOfGroundFloor.jpg" alt="Ground Floor Map">
-            
-                <!-- Orange Dots -->
-                <div class="dot cafe"></div>
-                <div class="dot planetarium"></div>
-                <div class="dot cosmology"></div>
-                <div class="dot playground"></div>
-            </div>
-            
-            <!-- Info Container -->
-            <div class="info-container">
-                <div class="info-content" id="cafe">
+        
+                <!-- Hidden Radio Buttons -->
+                <input type="radio" name="info-toggle" id="cafe-radio" class="info-toggle">
+                <input type="radio" name="info-toggle" id="planetarium-radio" class="info-toggle">
+                <input type="radio" name="info-toggle" id="cosmology-radio" class="info-toggle">
+                <input type="radio" name="info-toggle" id="playground-radio" class="info-toggle">
+        
+                <!-- Dots (Labels for Radio Buttons) -->
+                <label for="cafe-radio" class="dot cafe"></label>
+                <label for="planetarium-radio" class="dot planetarium"></label>
+                <label for="cosmology-radio" class="dot cosmology"></label>
+                <label for="playground-radio" class="dot playground"></label>
+        
+                <!-- Hover Images -->
+                <div class="info-image cafe">
                     <img src="Images/CafeMuseum.jpg" alt="Cafe">
+                </div>
+                <div class="info-image planetarium">
+                    <img src="Images/Planetarium11.jpg" alt="Planetarium">
+                </div>
+                <div class="info-image cosmology">
+                    <img src="Images/cosmology.jpg" alt="Cosmology Exhibit">
+                </div>
+                <div class="info-image playground">
+                    <img src="Images/PlaygroundHappy.jpg" alt="Indoor Playground">
+                </div>
+        
+                <!-- Info Containers -->
+                <div class="info-container cafe">
                     <p><strong>Café:</strong> Enjoy fresh snacks, coffee, and meals in a cozy setting.</p>
                 </div>
-                <div class="info-content" id="planetarium">
-                    <img src="Images/Planetarium11.jpg" alt="Planetarium">
+                <div class="info-container planetarium">
                     <p><strong>Planetarium:</strong> Explore the wonders of the universe in our immersive dome theater.</p>
                 </div>
-                <div class="info-content" id="cosmology">
-                    <img src="Images/cosmology.jpg" alt="Cosmology Exhibit">
+                <div class="info-container cosmology">
                     <p><strong>Cosmology Exhibit:</strong> Discover constellations, galaxies, and the history of space exploration.</p>
                 </div>
-                <div class="info-content" id="playground">
-                    <img src="Images/PlaygroundHappy.jpg" alt="Indoor Playground">
+                <div class="info-container playground">
                     <p><strong>Indoor Playground:</strong> A safe and fun space for kids to play while parents take a break.</p>
                 </div>
             </div>
-            
-        </section>
+        </section>        
 
         <!-- First Floor Section -->
         <section class="floor-section">
@@ -120,7 +137,4 @@
         </div>
     </footer>
 </body>
-</html>
-
-
-    
+</html>                                      
