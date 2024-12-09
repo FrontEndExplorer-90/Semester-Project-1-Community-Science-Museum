@@ -172,18 +172,18 @@ body {
 }
 
 /* Dots (Red) */
-.dot {
+.dot, .dot1, .dot2 {
     position: absolute;
-    width: 22px;
-    height: 22px;
+    width: 20px;
+    height: 20px;
     background-color: #ff7f26;
     border-radius: 50%;
     cursor: pointer;
-    transition: transform 0.5s ease;
+    transition: transform 0.2s ease;
     z-index: 10;
 }
 
-.dot:hover {
+.dot:hover, .dot1:hover, .dot2:hover {
     transform: scale(1.3);
 }
 
@@ -208,6 +208,56 @@ body {
     left: 59.8%; 
 }
 
+.dot1.ecology {
+    top: 14.4%;
+    left: 47.9%;
+}
+
+.dot1.evolution {
+    top: 32.3%;
+    left: 32.3%;
+}
+
+.dot1.aula {
+    top: 78.2%;
+    left: 6.5%;
+}
+
+.dot1.biology {
+    top: 73.8%;
+    left: 45.2%;
+}
+
+.dot1.meetup {
+    top: 52.3%;
+    left: 67.5%;
+}
+
+.dot2.medicine {
+    top: 24.2%;
+    left: 53.3%;
+}
+
+.dot2.robotics {
+    top: 51.5%;
+    left: 7%;
+}
+
+.dot2.energetica {
+    top: 48.2%;
+    left: 48.2%;
+}
+
+.dot2.insects {
+    top: 46.5%;
+    left: 89.2%;
+}
+
+.dot2.garden {
+    top: 77.4%;
+    left: 53.3%;
+}
+
 /* Hover Images (Appear On Map) */
 .info-image {
     display: none;
@@ -229,22 +279,22 @@ body {
 /* Specific Image Positions */
 .info-image.cafe {
     top: 14%;
-    left: 65%;
+    left: 72%;
 }
 
 .info-image.planetarium {
     top: 24%;
-    left: 45%;
+    left: 50%;
 }
 
 .info-image.cosmology {
-    top: 44%;
-    left: 63%;
+    top: 43%;
+    left: 68%;
 }
 
 .info-image.playground {
     top: 64.2%;
-    left: 58%;
+    left: 63%;
 }
 
 /* Info Container on Right */
@@ -287,6 +337,190 @@ body {
 
 #playground-radio:checked ~ .info-image.playground,
 #playground-radio:checked ~ .info-container.playground {
+    display: block;
+}
+
+.info-image1 {
+    display: none;
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    z-index: 20;
+    border-radius: 50%;
+}
+
+.info-image1 img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 2px solid black;
+    object-fit: cover;
+}
+
+/* First Floor Specific Image Positions */
+.info-image1.ecology {
+    top: 8%;
+    left: 54%;
+}
+
+.info-image1.evolution {
+    top: 28%;
+    left: 38%;
+}
+
+.info-image1.aula {
+    top: 55%;
+    left: 10%;
+}
+
+.info-image1.biology {
+    top: 60%;
+    left: 53%;
+}
+
+.info-image1.meetup {
+    top: 58%;
+    left: 56%;
+}
+
+/* Info Container for First Floor */
+.info-container1 {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: -40%;
+    max-width: 30%;
+    background-color: rgb(247, 246, 246);
+    border: 2px solid #409286;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: left;
+    z-index: 30;
+}
+
+.info-container1 p {
+    font-size: 1rem;
+    color: #444;
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* Radio Toggles for First Floor */
+#ecology-radio:checked ~ .info-image1.ecology,
+#ecology-radio:checked ~ .info-container1.ecology {
+    display: block;
+}
+
+#evolution-radio:checked ~ .info-image1.evolution,
+#evolution-radio:checked ~ .info-container1.evolution {
+    display: block;
+}
+
+#aula-radio:checked ~ .info-image1.aula,
+#aula-radio:checked ~ .info-container1.aula {
+    display: block;
+}
+
+#biology-radio:checked ~ .info-image1.biology,
+#biology-radio:checked ~ .info-container1.biology {
+    display: block;
+}
+
+#meetup-radio:checked ~ .info-image1.meetup,
+#meetup-radio:checked ~ .info-container1.meetup {
+    display: block;
+}
+
+.info-image2 {
+    display: none;
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    z-index: 20;
+    border-radius: 50%;
+}
+
+.info-image2 img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 2px solid black;
+    object-fit: cover;
+}
+
+/* Specific Image Positions */
+.info-image2.medicine {
+    top: 10%;
+    left: 58%;
+}
+
+.info-image2.robotics {
+    top: 28%;
+    left: 10%;
+}
+
+.info-image2.energetica {
+    top: 53%;
+    left: 25%;
+}
+
+.info-image2.insects {
+    top: 51%;
+    left: 67%;
+}
+
+.info-image2.garden {
+    top: 79%;
+    left: 55%;
+}
+
+/* Info Containers on Right */
+.info-container2 {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: -40%;
+    max-width: 30%;
+    background-color: rgb(247, 246, 246);
+    border: 2px solid #409286;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: left;
+    z-index: 30;
+}
+
+.info-container2 p {
+    font-size: 1rem;
+    color: #444;
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* Visibility Triggers */
+#medicine-radio:checked ~ .info-image2.medicine,
+#medicine-radio:checked ~ .info-container2.medicine {
+    display: block;
+}
+
+#robotics-radio:checked ~ .info-image2.robotics,
+#robotics-radio:checked ~ .info-container2.robotics {
+    display: block;
+}
+
+#energetica-radio:checked ~ .info-image2.energetica,
+#energetica-radio:checked ~ .info-container2.energetica {
+    display: block;
+}
+
+#insects-radio:checked ~ .info-image2.insects,
+#insects-radio:checked ~ .info-container2.insects {
+    display: block;
+}
+
+#garden-radio:checked ~ .info-image2.garden,
+#garden-radio:checked ~ .info-container2.garden {
     display: block;
 }
 
