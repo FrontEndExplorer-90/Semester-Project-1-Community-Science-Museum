@@ -1,0 +1,454 @@
+/* Responsive Adjustments from exhibit page because of length and complexity*/
+@media (max-width: 1024px) {
+
+    .navbar {
+        flex-wrap: wrap; 
+
+    }
+
+    .logo img {
+        height: 100px; 
+        margin-top: 20px;
+    }
+
+    .logo span {
+        font-size: 18px;
+        left: 0;
+        margin: 0;
+        text-align: center;
+        left: 10px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap; 
+        justify-content: center;
+        gap: 12px; 
+        
+    }
+
+    .nav-links a {
+        font-size: 14px;  
+    }
+
+    .cta {
+        font-size: 14px;
+        padding: 8px 12px;
+        margin: 10px 0 0;
+    }
+
+    .header-line {
+        width: 90%; 
+        margin-top: 10px; 
+    }
+
+    .exhibits-title {
+        font-size: 2.5rem; 
+    }
+
+    .exhibits-description {
+        font-size: 1rem; 
+    }
+
+    .floor-section {
+        padding: 0 10px; 
+        margin: 20px auto; 
+    }
+
+    .map-container {
+        width: 80%; 
+    }
+
+    .info-container, .info-container1, .info-container2 {
+        max-width: 40%; 
+        right: -30%; 
+    }
+
+    /* Ground Floor */
+
+    .info-image.cafe {
+        top: 18%;
+        left: 65%;
+    }
+
+    .info-container.cafe {
+        top: 18%;
+        left: 70%;
+    }
+
+    .info-image.planetarium {
+        top: 28%;
+        left: 45%;
+    }
+
+    .info-container.planetarium {
+        top: 28%;
+        left: 50%;
+    }
+
+    .info-image.cosmology {
+        top: 48%;
+        left: 62%;
+    }
+
+    .info-container.cosmology {
+        top: 48%;
+        left: 67%;
+    }
+
+    .info-image.playground {
+        top: 68%;
+        left: 58%;
+    }
+
+    .info-container.playground {
+        top: 68%;
+        left: 63%;
+    }
+
+    /* First Floor */
+    .info-image1.ecology {
+        top: 12%;
+        left: 45%;
+    }
+
+    .info-container1.ecology {
+        top: 12%;
+        left: 50%;
+    }
+
+    .info-image1.evolution {
+        top: 32%;
+        left: 35%;
+    }
+
+    .info-container1.evolution {
+        top: 32%;
+        left: 40%;
+    }
+
+    .info-image1.aula {
+        top: 60%;
+        left: 10%;
+    }
+
+    .info-container1.aula {
+        top: 60%;
+        left: 15%;
+    }
+
+    .info-image1.biology {
+        top: 70%;
+        left: 42%;
+    }
+
+    .info-container1.biology {
+        top: 70%;
+        left: 47%;
+    }
+
+    .info-image1.meetup {
+        top: 55%;
+        left: 65%;
+    }
+
+    .info-container1.meetup {
+        top: 55%;
+        left: 70%;
+    }
+
+    /* Second Floor */
+    .info-image2.medicine {
+        top: 12%;
+        left: 58%;
+    }
+
+    .info-container2.medicine {
+        top: 12%;
+        left: 63%;
+    }
+
+    .info-image2.robotics {
+        top: 28%;
+        left: 12%;
+    }
+
+    .info-container2.robotics {
+        top: 28%;
+        left: 17%;
+    }
+
+    .info-image2.energetica {
+        top: 50%;
+        left: 30%;
+    }
+
+    .info-container2.energetica {
+        top: 50%;
+        left: 35%;
+    }
+
+    .info-image2.insects {
+        top: 50%;
+        left: 72%;
+    }
+
+    .info-container2.insects {
+        top: 50%;
+        left: 77%;
+    }
+
+    .info-image2.garden {
+        top: 75%;
+        left: 58%;
+    }
+
+    .info-container2.garden {
+        top: 75%;
+        left: 63%;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: row; 
+        align-items: center;
+        padding: 20px 10px; 
+    }
+
+    .logo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+        position: relative; 
+    }
+
+    .logo img {
+        height: 60px;
+        width: auto;
+        margin: 0;
+        position: static;
+    }
+
+    .logo span {
+        font-size: 1.5rem;
+        margin-top: 10px;
+        text-align: center;
+        left: 20;
+    }
+
+    .nav-links {
+        flex-direction: row; 
+        gap: 12px; 
+        margin-top: 15px; 
+        align-items: center; 
+    }
+
+    .nav-links a {
+        font-size: 14px; 
+        padding: 5px 0; 
+    }
+
+    .cta {
+        display: block; 
+        margin: 20px auto 0; 
+        font-size: 14px; 
+        padding: 8px 12px; 
+        text-align: center;
+    }
+
+    .header-line {
+        width: 90%; 
+        margin-top: 10px; 
+    }
+
+    .exhibits-title {
+        font-size: 2rem; 
+        margin-bottom: 15px;
+    }
+
+    .exhibits-description {
+        font-size: 0.9rem;
+        margin-bottom: 20px;
+    }
+
+    .floor-section {
+        padding: 0 5px;
+        margin: 20px 0;
+    }
+
+    .map-container {
+        width: 95%; 
+        margin: 10px auto;
+    }
+
+    .map-container img {
+        border-radius: 5px; 
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    }
+
+    .dot, .dot1, .dot2 {
+        width: 15px; 
+        height: 15px;
+    }
+
+    .info-image, .info-image1, .info-image2 {
+        width: 120px; 
+        height: 120px;
+    }
+
+    .info-container, .info-container1, .info-container2 {
+        max-width: 80%; 
+        right: 0; 
+        left: 10%; 
+        top: 20px; 
+    }
+
+    .info-container p, .info-container1 p, .info-container2 p {
+        font-size: 0.9rem; 
+    }
+
+    /* Ground Floor */
+    .info-image.cafe {
+        top: 16%;
+        left: 12%;
+    }
+
+    .info-container.cafe {
+        top: 16%;
+        left: 67%;
+    }
+
+    .info-image.planetarium {
+        top: 45%;
+        left: 12%;
+    }
+
+    .info-container.planetarium {
+        top: 10%;
+        left: 12%;
+    }
+
+    .info-image.cosmology {
+        top: 46%;
+        left: 40%;
+    }
+
+    .info-container.cosmology {
+        top: 10%;
+        left: 35%;
+    }
+
+    .info-image.playground {
+        top: 50%;
+        left: 40%;
+    }
+
+    .info-container.playground {
+        top: 15%;
+        left: 30%;
+    }
+
+    /* First Floor */
+    .info-image1.ecology {
+        top: 60%;
+        left: 10%;
+    }
+
+    .info-container1.ecology {
+        top: 10%;
+        left: 20%;
+    }
+
+    .info-image1.evolution {
+        top: 40%;
+        left: 32%;
+    }
+
+    .info-container1.evolution {
+        top: 5%;
+        left: 37%;
+    }
+
+    .info-image1.aula {
+        top: 58%;
+        left: 8%;
+    }
+
+    .info-container1.aula {
+        top: 20%;
+        left: 8%;
+    }
+
+    .info-image1.biology {
+        top: 68%;
+        left: 38%;
+    }
+
+    .info-container1.biology {
+        top: 15%;
+        left: 43%;
+    }
+
+    .info-image1.meetup {
+        top: 60%;
+        left: 32%;
+    }
+
+    .info-container1.meetup {
+        top: 10%;
+        left: 32%;
+    }
+
+    /* Second Floor */
+    .info-image2.medicine {
+        top: 55%;
+        left: 55%;
+    }
+
+    .info-container2.medicine {
+        top: 10%;
+        left: 20%;
+    }
+
+    .info-image2.robotics {
+        top: 10%;
+        left: 10%;
+    }
+
+    .info-container2.robotics {
+        top: 55%;
+        left: 15%;
+    }
+
+    .info-image2.energetica {
+        top: 55%;
+        left: 28%;
+    }
+
+    .info-container2.energetica {
+        top: 10%;
+        left: 33%;
+    }
+
+    .info-image2.insects {
+        top: 58%;
+        left: 60%;
+    }
+
+    .info-container2.insects {
+        top: 10%;
+        left: 40%;
+    }
+
+    .info-image2.garden {
+        top: 73%;
+        left: 55%;
+    }
+
+    .info-container2.garden {
+        top: 25%;
+        left: 30%;
+    }
+}
