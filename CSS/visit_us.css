@@ -42,6 +42,22 @@
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+.visit-us h2 {
+    font-family: 'Kodchasan', sans-serif;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: black;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.visit-us h3 {
+    font-family: 'Kodchasan', sans-serif;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: black;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
 /* Grid Layout for Cards */
 .grid {
     display: grid;
@@ -53,8 +69,8 @@
 
 /* Cards */
 .card {
-    width: 360px; 
-    height: 360px; 
+    width: 450px; 
+    height: 450px; 
     background-color: black; 
     border-radius: 40px; 
     border: 2px solid black;
@@ -71,7 +87,7 @@
 /* Card Text Styling */
 .card h3 {
     font-family: 'Kodchasan', sans-serif;
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: bold;
     color: black;
     margin-bottom: 15px;

@@ -7,6 +7,16 @@ body {
     color: #333;
 }
 
+.header-line {
+    width: calc(100% - 140px);
+    height: 3px;
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+    left: 140px;
+    z-index: 1;
+}
+
 main {
     background-image: url('../Images/bookingreceipt.jpg'); 
     background-size: cover;

@@ -8,6 +8,16 @@ body {
     object-fit: cover;
 }
 
+.header-line {
+    width: calc(100% - 140px);
+    height: 3px;
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+    left: 140px;
+    z-index: 1;
+}
+
 /* Privacy Page Styles */
 .privacy-page {
     display: flex; 

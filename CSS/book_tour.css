@@ -6,6 +6,16 @@ body {
     background-color: #F5EACD;
 }
 
+.header-line {
+    width: calc(100% - 140px);
+    height: 3px;
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+    left: 140px;
+    z-index: 1;
+}
+
 /* Book Tour Section */
 .book-tour {
     text-align: center;
