@@ -94,14 +94,14 @@ body {
 }
 
 
-/* Footer for Explore */
+/* Footer */
 .footer {
     position: relative;
     background-color: #F5EACD;
     text-align: center;
     padding: 10px 0;
     font-family: 'Inter', sans-serif;
-    font-size: 14px;
+    font-size: 0.875rem;
     color: black;
     z-index: 1;
 }
@@ -116,6 +116,8 @@ body {
     background-color: black;
     z-index: -1;
 }
+
+/*Page Specific Responsive Design */
 
 @media (max-width: 1024px) {
     .content-container {

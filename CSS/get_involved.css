@@ -123,20 +123,6 @@ body {
     font-weight: bold;
 }
 
-/* Footer */
-.footer {
-    background-color: #F5EACD;
-    text-align: center;
-    padding: 10px 0;
-    font-size: 14px;
-}
-
-.footer a {
-    text-decoration: none;
-    color: black;
-    margin: 0 10px;
-}
-
 .reach-out-container {
     display: flex;
     justify-content: center; 
@@ -147,7 +133,7 @@ body {
 /* Button styling */
 .reach-out-button {
     font-family: 'Inter', sans-serif;
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: bold;
     text-decoration: none; 
     color: black;
@@ -163,6 +149,23 @@ body {
     background-color: #BB7541; 
     transform: scale(1.05); 
 }
+
+/* Footer */
+.footer {
+    background-color: #F5EACD;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 0.875rem;
+}
+
+.footer a {
+    text-decoration: none;
+    color: black;
+    margin: 0 10px;
+}
+
+
+/*Page Specific Responsive Design */
 
 @media (max-width: 1024px) {
     .grid {
@@ -212,6 +215,6 @@ body {
     }
 
     .footer {
-        font-size: 12px; 
+        font-size: 0.75rem; 
     }
 }

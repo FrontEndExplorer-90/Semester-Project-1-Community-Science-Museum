@@ -52,7 +52,7 @@
     margin: 0 auto;
 }
 
-/* Large Card for Visiting Professor */
+/* Large Card for Professor */
 .large-card {
     position: relative;
     width: 95%;
@@ -99,7 +99,7 @@
     border-radius: 40px;
 }
 
-/* Hover Effects */
+/* Hover Effects For Cards*/
 .event-card:hover,
 .large-card:hover {
     transform: scale(1.05);
@@ -145,7 +145,7 @@
     background-color: rgba(9, 41, 87, 0.95);
 }
 
-/* Overlay Text Style */
+/* Overlay Text */
 .overlay p {
     font-family: 'Kodchasan', sans-serif;
     font-size: 1rem;
@@ -274,7 +274,7 @@
     display: block; 
 }
 
-/* Links inside Calendar */
+/* Links inside the Calendar */
 .calendar .event-link {
     text-decoration: none;
     color: white;
@@ -306,6 +306,8 @@
     background-color: #BB7541;
 }
 
+/*Page Specific Responsive Design */
+
 @media (max-width: 1024px) {
     .events h1 {
         font-size: 1.8rem;
@@ -334,7 +336,7 @@
     }
 }
 
-/* Mobile Styles (768px and below) */
+
 @media (max-width: 768px) {
     .events h1 {
         font-size: 1.5rem;

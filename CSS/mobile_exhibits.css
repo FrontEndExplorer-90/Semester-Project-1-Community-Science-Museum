@@ -1,4 +1,7 @@
 /* Responsive Adjustments from exhibit page because of length and complexity*/
+
+/*For 1024px Displays*/
+
 @media (max-width: 1024px) {
 
     .navbar {
@@ -12,7 +15,7 @@
     }
 
     .logo span {
-        font-size: 18px;
+        font-size: 1.125rem;
         left: 0;
         margin: 0;
         text-align: center;
@@ -27,11 +30,11 @@
     }
 
     .nav-links a {
-        font-size: 14px;  
+        font-size: 0.875rem;  
     }
 
     .cta {
-        font-size: 14px;
+        font-size: 0.875rem;
         padding: 8px 12px;
         margin: 10px 0 0;
     }
@@ -208,6 +211,9 @@
     }
 }
 
+
+/*For 768px Displays*/
+
 @media (max-width: 768px) {
 
     .navbar {
@@ -246,14 +252,14 @@
     }
 
     .nav-links a {
-        font-size: 14px; 
+        font-size: 0.875rem; 
         padding: 5px 0; 
     }
 
     .cta {
         display: block; 
         margin: 20px auto 0; 
-        font-size: 14px; 
+        font-size: 0.875rem; 
         padding: 8px 12px; 
         text-align: center;
     }

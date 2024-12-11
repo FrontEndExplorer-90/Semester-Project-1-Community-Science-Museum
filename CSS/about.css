@@ -113,7 +113,7 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Team Container */
+
 .team-container {
     display: flex;
     justify-content: space-between;
@@ -160,7 +160,7 @@ body {
     margin-bottom: 10px;
 }
 
-/* Overlay that appears on hover */
+/* Overlay */
 .team-card-overlay {
     position: absolute;
     top: 0;
@@ -187,7 +187,7 @@ body {
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
 
-/* Additional Team List (Right Side) */
+
 .additional-team {
     flex: 1;
     text-align: left;
@@ -216,14 +216,14 @@ body {
     line-height: 1.5;
 }
 
-/* Footer for About Page */
+/* Footer */
 .footer {
     position: relative;
     background-color: #F5EACD;
     text-align: center;
     padding: 10px 0;
     font-family: 'Inter', sans-serif;
-    font-size: 14px;
+    font-size: 0.875rem;
     color: black;
 }
 
@@ -237,7 +237,8 @@ body {
     background-color: black;
 }
 
-/* Responsive Design */
+/*Page Specific Responsive Design */
+
 @media (max-width: 1024px) {
     .about-page {
         flex-direction: column; 
@@ -296,7 +297,7 @@ body {
     }
 
     .footer {
-        font-size: 12px; 
+        font-size: 0.75rem; 
         padding: 8px 0;
     }
 }

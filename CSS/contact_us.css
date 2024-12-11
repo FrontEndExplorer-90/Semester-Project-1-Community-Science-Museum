@@ -109,7 +109,6 @@ body {
     margin-left: 0;
 }
 
-
 .contact-form label {
     font-weight: bold;
     margin-bottom: 5px;
@@ -155,7 +154,7 @@ body {
     text-align: center;
     padding: 10px 0;
     font-family: 'Inter', sans-serif;
-    font-size: 14px;
+    font-size: 0.875rem;
     color: black;
     z-index: 1;
 }
@@ -171,6 +170,8 @@ body {
     z-index: -1;
 }
 
+/*Page Specific Responsive Design */
+
 @media (max-width: 1024px) {
     .content-container {
         flex-direction: column; 
@@ -184,7 +185,6 @@ body {
 
 }
 
-/* Mobile Styles (768px and below) */
 @media (max-width: 768px) {
     .contact-title {
         font-size: 2.2rem; 
@@ -210,7 +210,7 @@ body {
     }
 
     .footer {
-        font-size: 12px; 
+        font-size: 0.75rem; 
         padding: 8px 0;
     }
 }

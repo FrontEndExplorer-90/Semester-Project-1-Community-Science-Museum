@@ -98,7 +98,8 @@
     filter: brightness(0.9);
 }
 
-/* Responsive Adjustments */
+/*Page Specific Responsive Design */
+
 @media (max-width: 1024px) {
     .highlights {
         flex-wrap: wrap;

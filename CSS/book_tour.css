@@ -150,7 +150,8 @@ body {
     background-color: black;
 }
 
-/* Responsive Design */
+/*Page Specific Responsive Design */
+
 @media (max-width: 768px) {
     .info-section {
         font-size: 0.9rem;
