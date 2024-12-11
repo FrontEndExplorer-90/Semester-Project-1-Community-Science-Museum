@@ -132,6 +132,7 @@ body {
 }
 
 .team-card {
+    position: relative;
     width: 270px;
     text-align: center;
     background-color: #fff;
