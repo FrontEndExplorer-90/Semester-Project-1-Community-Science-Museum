@@ -31,7 +31,6 @@
             </nav>
             <a href="book_tour.html" class="cta">Book Guided Tour <span class="highlight">here!</span></a>
         </div>
-        
         <div class="header-line"></div>
     </header>
 
@@ -40,6 +39,7 @@
         <p class="exhibits-description">
             Discover the wonders of science through our multi-level museum! Use the floor maps below to explore each section and learn more about what awaits you.
         </p>
+
         <!-- Ground Floor Section -->
         <section class="floor-section">
             <h2 class="floor-title">Ground Floor</h2>
@@ -47,34 +47,26 @@
                 Start your journey on the ground floor, home to the Café, Planetarium, Cosmology Exhibit, and Indoor Playground!
             </p>
         
-            <div class="map-container">
-                <!-- Default Reset Radio Button -->
+            <div class="map-container" role="group" aria-labelledby="ground-floor-heading">
+                <h3 id="ground-floor-heading" class="visually-hidden">Ground Floor Highlights</h3>
+        
                 <input type="radio" name="info-toggle" id="reset-radio" class="info-toggle" checked>
                 <label for="reset-radio" class="reset-area" aria-label="Reset Map"></label>
-
-                <!-- Map Image -->
+        
                 <img src="Images/MapOfGroundFloor.jpg" alt="Ground Floor Map">
-
-
-                 <!-- Fieldset for Radio Buttons -->
-                <fieldset>
-                    <legend>Ground Floor Highlights</legend>
         
-                    <!-- Hidden Radio Buttons -->
-                    <input type="radio" name="info-toggle" id="cafe-radio" class="info-toggle">
-                    <label for="cafe-radio" class="dot cafe" aria-label="Café"></label>
+                <input type="radio" name="info-toggle" id="cafe-radio" class="info-toggle">
+                <label for="cafe-radio" class="dot cafe" aria-label="Café"></label>
         
-                    <input type="radio" name="info-toggle" id="planetarium-radio" class="info-toggle">
-                    <label for="planetarium-radio" class="dot planetarium" aria-label="Planetarium"></label>
+                <input type="radio" name="info-toggle" id="planetarium-radio" class="info-toggle">
+                <label for="planetarium-radio" class="dot planetarium" aria-label="Planetarium"></label>
         
-                    <input type="radio" name="info-toggle" id="cosmology-radio" class="info-toggle">
-                    <label for="cosmology-radio" class="dot cosmology" aria-label="Cosmology Exhibit"></label>
+                <input type="radio" name="info-toggle" id="cosmology-radio" class="info-toggle">
+                <label for="cosmology-radio" class="dot cosmology" aria-label="Cosmology Exhibit"></label>
         
-                    <input type="radio" name="info-toggle" id="playground-radio" class="info-toggle">
-                    <label for="playground-radio" class="dot playground" aria-label="Indoor Playground"></label>
-                </fieldset>
+                <input type="radio" name="info-toggle" id="playground-radio" class="info-toggle">
+                <label for="playground-radio" class="dot playground" aria-label="Indoor Playground"></label>
         
-                <!-- Hover Images -->
                 <div class="info-image cafe">
                     <img src="Images/CafeMuseum.jpg" alt="Café">
                 </div>
@@ -88,7 +80,6 @@
                     <img src="Images/PlaygroundHappy.jpg" alt="Indoor Playground">
                 </div>
         
-                <!-- Info Containers -->
                 <div class="info-container cafe">
                     <p><strong>Café:</strong> Enjoy fresh snacks, coffee, and meals in a cozy setting.</p>
                 </div>
@@ -104,7 +95,6 @@
             </div>
         </section>
         
-
         <!-- First Floor Section -->
         <section class="floor-section">
             <h2 class="floor-title">First Floor</h2>
@@ -112,36 +102,29 @@
                 Explore the first floor, featuring the Ecology, Evolution, and Biology exhibits, as well as the Lecture Hall and the meeting point for Night at the Museum!
             </p>
         
-            <div class="map-container">
-                <!-- Default Reset Radio Button -->
+            <div class="map-container" role="group" aria-labelledby="first-floor-heading">
+                <h3 id="first-floor-heading" class="visually-hidden">First Floor Highlights</h3>
+        
                 <input type="radio" name="info-toggle1" id="reset-radio1" class="info-toggle" checked>
                 <label for="reset-radio1" class="reset-area" aria-label="Reset Map"></label>
         
-                <!-- Map Image -->
                 <img src="Images/MapFirstFloor.jpg" alt="First Floor Map">
-
-                <!-- Fieldset for Radio Buttons -->
-                <fieldset>
-                    <legend>First Floor Highlights</legend>
         
-                    <!-- Hidden Radio Buttons -->
-                    <input type="radio" name="info-toggle1" id="ecology-radio" class="info-toggle">
-                    <label for="ecology-radio" class="dot1 ecology" aria-label="Ecology Exhibit"></label>
+                <input type="radio" name="info-toggle1" id="ecology-radio" class="info-toggle">
+                <label for="ecology-radio" class="dot1 ecology" aria-label="Ecology Exhibit"></label>
         
-                    <input type="radio" name="info-toggle1" id="evolution-radio" class="info-toggle">
-                    <label for="evolution-radio" class="dot1 evolution" aria-label="Evolution Exhibit"></label>
+                <input type="radio" name="info-toggle1" id="evolution-radio" class="info-toggle">
+                <label for="evolution-radio" class="dot1 evolution" aria-label="Evolution Exhibit"></label>
         
-                    <input type="radio" name="info-toggle1" id="aula-radio" class="info-toggle">
-                    <label for="aula-radio" class="dot1 aula" aria-label="Lecture Hall"></label>
+                <input type="radio" name="info-toggle1" id="aula-radio" class="info-toggle">
+                <label for="aula-radio" class="dot1 aula" aria-label="Lecture Hall"></label>
         
-                    <input type="radio" name="info-toggle1" id="biology-radio" class="info-toggle">
-                    <label for="biology-radio" class="dot1 biology" aria-label="Biology Exhibit"></label>
+                <input type="radio" name="info-toggle1" id="biology-radio" class="info-toggle">
+                <label for="biology-radio" class="dot1 biology" aria-label="Biology Exhibit"></label>
         
-                    <input type="radio" name="info-toggle1" id="meetup-radio" class="info-toggle">
-                    <label for="meetup-radio" class="dot1 meetup" aria-label="Night at the Museum Meetup"></label>
-                </fieldset>
+                <input type="radio" name="info-toggle1" id="meetup-radio" class="info-toggle">
+                <label for="meetup-radio" class="dot1 meetup" aria-label="Night at the Museum Meetup"></label>
         
-                <!-- Hover Images -->
                 <div class="info-image1 ecology">
                     <img src="Images/Ecology.jpg" alt="Ecology Exhibit">
                 </div>
@@ -158,7 +141,6 @@
                     <img src="Images/MeetupPoint232.jpg" alt="Night at the Museum Meetup">
                 </div>
         
-                <!-- Info Containers -->
                 <div class="info-container1 ecology">
                     <p><strong>Ecology Exhibit:</strong> Dive into the challenges and solutions for creating a sustainable future.</p>
                 </div>
@@ -176,8 +158,7 @@
                 </div>
             </div>
         </section>
-        
-        
+
         <!-- Second Floor Section -->
         <section class="floor-section">
             <h2 class="floor-title">Second Floor</h2>
@@ -185,41 +166,34 @@
                 Discover the wonders of the second floor, featuring the Medicine Exhibit, Robotics and AI, Energetica, the Insects Exhibit, and the Botanical Garden!
             </p>
         
-            <div class="map-container">
-                <!-- Default Reset Radio Button -->
+            <div class="map-container" role="group" aria-labelledby="second-floor-heading">
+                <h3 id="second-floor-heading" class="visually-hidden">Second Floor Highlights</h3>
+        
                 <input type="radio" name="info-toggle2" id="reset-radio2" class="info-toggle" checked>
                 <label for="reset-radio2" class="reset-area" aria-label="Reset Map"></label>
         
-                <!-- Map Image -->
                 <img src="Images/MapOfSecondFloor.jpg" alt="Second Floor Map">
-
-                <!-- Fieldset for Radio Buttons -->
-                <fieldset>
-                    <legend>Second Floor Highlights</legend>
         
-                    <!-- Hidden Radio Buttons -->
-                    <input type="radio" name="info-toggle2" id="medicine-radio" class="info-toggle">
-                    <label for="medicine-radio" class="dot2 medicine" aria-label="Medicine Exhibit"></label>
+                <input type="radio" name="info-toggle2" id="medicine-radio" class="info-toggle">
+                <label for="medicine-radio" class="dot2 medicine" aria-label="Medicine Exhibit"></label>
         
-                    <input type="radio" name="info-toggle2" id="robotics-radio" class="info-toggle">
-                    <label for="robotics-radio" class="dot2 robotics" aria-label="Robotics and AI"></label>
+                <input type="radio" name="info-toggle2" id="robotics-radio" class="info-toggle">
+                <label for="robotics-radio" class="dot2 robotics" aria-label="Robotics and AI"></label>
         
-                    <input type="radio" name="info-toggle2" id="energetica-radio" class="info-toggle">
-                    <label for="energetica-radio" class="dot2 energetica" aria-label="Energetica Exhibit"></label>
+                <input type="radio" name="info-toggle2" id="energetica-radio" class="info-toggle">
+                <label for="energetica-radio" class="dot2 energetica" aria-label="Energetica Exhibit"></label>
         
-                    <input type="radio" name="info-toggle2" id="insects-radio" class="info-toggle">
-                    <label for="insects-radio" class="dot2 insects" aria-label="Insects Exhibit"></label>
+                <input type="radio" name="info-toggle2" id="insects-radio" class="info-toggle">
+                <label for="insects-radio" class="dot2 insects" aria-label="Insects Exhibit"></label>
         
-                    <input type="radio" name="info-toggle2" id="garden-radio" class="info-toggle">
-                    <label for="garden-radio" class="dot2 garden" aria-label="Botanical Garden"></label>
-                </fieldset>
-                
-                <!-- Hover Images -->
+                <input type="radio" name="info-toggle2" id="garden-radio" class="info-toggle">
+                <label for="garden-radio" class="dot2 garden" aria-label="Botanical Garden"></label>
+        
                 <div class="info-image2 medicine">
-                    <img src="Images/medicine and biology.jpg" alt="Medicine Exhibit">
+                    <img src="Images/medicine_and_biology.jpg" alt="Medicine Exhibit">
                 </div>
                 <div class="info-image2 robotics">
-                    <img src="Images/Robotics and Ai.jpg" alt="Robotics and AI">
+                    <img src="Images/Robotics_and_AI.jpg" alt="Robotics and AI">
                 </div>
                 <div class="info-image2 energetica">
                     <img src="Images/Energetica2neon.jpg" alt="Energetica Exhibit">
@@ -231,7 +205,6 @@
                     <img src="Images/BotanicalGarden.jpg" alt="Botanical Garden">
                 </div>
         
-                <!-- Info Containers -->
                 <div class="info-container2 medicine">
                     <p><strong>Medicine Exhibit:</strong> Learn about groundbreaking advancements in medicine, from ancient practices to cutting-edge biotechnology.</p>
                 </div>
@@ -266,7 +239,6 @@
                 <img src="Images/icons8-tiktok-64.png" alt="TikTok">
             </a>
         </div>
-        
         <div class="footer-links">
             <a href="contact_us.html">Contact us</a>
             <span>|</span>
@@ -274,4 +246,4 @@
         </div>
     </footer>
 </body>
-</html>                                      
+</html>
