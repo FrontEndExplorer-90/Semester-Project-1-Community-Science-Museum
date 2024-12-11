@@ -175,11 +175,11 @@
 }
 
 .calendar-header .month {
-    color: #47837A;
+    color: #30615a;
 }
 
 .calendar-header .year {
-    color: #333;
+    color: black;
 }
 
 /* Calendar Section */
@@ -204,7 +204,7 @@
 }
 
 .date.event {
-    background-color: #47837A;
+    background-color: #366c64;
     color: white;
     cursor: pointer;
     position: relative;
@@ -216,7 +216,7 @@
     bottom: 120%; 
     left: 50%;
     transform: translateX(-50%);
-    background-color: #333;
+    background-color: black;
     color: #fff;
     padding: 5px 10px;
     border-radius: 5px;
@@ -244,7 +244,7 @@
 }
 
 .event-indicator {
-    color: #30615a;
+    color: ##366c64;
     font-weight: bold;
 }
 
@@ -261,13 +261,14 @@
 
 #event-details h3 {
     font-size: 1.5rem;
-    color: #30615a;
+    color: black;
     margin-bottom: 10px;
 }
 
 #event-details .event-info {
     display: none; 
     margin-bottom: 20px;
+
 }
 
 #event-details .event-info:target {
@@ -279,6 +280,7 @@
     text-decoration: none;
     color: white;
     font-weight: bold;
+    background-color: #30615a;
 }
 
 .calendar .event-link:hover {

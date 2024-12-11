@@ -22,7 +22,7 @@ body {
     padding: 60px 20px;
     position: relative; 
     z-index: 1;
-    background-image: url('../Images/guided\ tour.jpg'); 
+    background-image: url('../Images/GuidedTour.jpg'); 
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
