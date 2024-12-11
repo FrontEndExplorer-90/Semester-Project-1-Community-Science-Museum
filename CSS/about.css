@@ -124,6 +124,12 @@ body {
     flex-wrap: wrap;
 }
 
+ul {
+    list-style-type: none; 
+    padding: 0; 
+    margin: 0; 
+}
+
 .team-grid {
     display: flex;
     gap: 20px;
