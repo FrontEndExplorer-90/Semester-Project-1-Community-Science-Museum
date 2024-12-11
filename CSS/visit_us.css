@@ -149,6 +149,8 @@
     color: black;
 }
 
+/*Page Specific Responsive Design */
+
 @media (max-width: 1024px) {
     .card h3 {
         font-size: 2rem; 
