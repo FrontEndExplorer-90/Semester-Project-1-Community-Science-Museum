@@ -66,6 +66,23 @@
         right: -30%; 
     }
 
+    .info-image, .info-image1, .info-image2 {
+        display: none;
+        position: absolute;
+        width: 150px;
+        height: 150px;
+        z-index: 20;
+        border-radius: 50%;
+    }
+    
+    .info-image img, .info-image1 img, .info-image2 img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        border: 1px solid black;
+        object-fit: cover;
+    }
+
     /* Ground Floor */
 
     .info-image.cafe {
@@ -300,8 +317,20 @@
     }
 
     .info-image, .info-image1, .info-image2 {
-        width: 120px; 
-        height: 120px;
+        display: none;
+        position: absolute;
+        width: 150px;
+        height: 150px;
+        z-index: 20;
+        border-radius: 50%;
+    }
+    
+    .info-image img, .info-image1 img, .info-image2 img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        border: 1px solid black;
+        object-fit: cover;
     }
 
     .info-container, .info-container1, .info-container2 {
