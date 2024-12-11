@@ -244,7 +244,7 @@
 }
 
 .event-indicator {
-    color: #47837A;
+    color: #30615a;
     font-weight: bold;
 }
 
@@ -261,7 +261,7 @@
 
 #event-details h3 {
     font-size: 1.5rem;
-    color: #47837A;
+    color: #30615a;
     margin-bottom: 10px;
 }
 
@@ -292,7 +292,7 @@
 
 .booking-button .cta {
     display: inline-block;
-    background-color: #C08C66;
+    background-color: #a0541b;
     color: white;
     font-size: 1.2rem;
     font-weight: bold;
