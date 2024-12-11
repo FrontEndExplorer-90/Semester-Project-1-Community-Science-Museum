@@ -47,7 +47,7 @@ body {
 }
 
 .logo span {
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: bold;
     text-decoration: none;
     color: black;
@@ -69,7 +69,7 @@ body {
 .nav-links a {
     text-decoration: none;
     font-family: 'Inter', sans-serif;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: bold;
     color: #333;
     transition: color 0.3s;
@@ -81,7 +81,7 @@ body {
 
 .cta {
     font-family: 'Inter', sans-serif;
-    font-size: 16px;
+    font-size: 1rem;
     background-color: #C08C66;
     color: black;
     font-weight: bold;
@@ -99,7 +99,7 @@ body {
     color: black;
 }
 
-/* Exhibits Page Styling */
+
 .exhibits-page {
     display: flex;
     flex-direction: column;
@@ -207,7 +207,7 @@ body {
     display: none; 
 }
 
-/* Dots (Red) */
+
 .dot, .dot1, .dot2 {
     position: absolute;
     width: 20px;
@@ -298,15 +298,15 @@ body {
 .info-image {
     display: none;
     position: absolute;
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
     z-index: 20;
     border-radius: 50%;
 }
 
 .info-image img {
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
     border-radius: 50%;
     border: 2px solid black;
     object-fit: cover;
@@ -379,15 +379,15 @@ body {
 .info-image1 {
     display: none;
     position: absolute;
-    width: 150px;
-    height: 150px;
+    width: 250px;
+    height: 250px;
     z-index: 20;
     border-radius: 50%;
 }
 
 .info-image1 img {
-    width: 150px;
-    height: 150px;
+    width: 250px;
+    height: 250px;
     border-radius: 50%;
     border: 2px solid black;
     object-fit: cover;
@@ -471,15 +471,15 @@ body {
 .info-image2 {
     display: none;
     position: absolute;
-    width: 150px;
-    height: 150px;
+    width: 250px;
+    height: 250px;
     z-index: 20;
     border-radius: 50%;
 }
 
 .info-image2 img {
-    width: 150px;
-    height: 150px;
+    width: 250px;
+    height: 250px;
     border-radius: 50%;
     border: 2px solid black;
     object-fit: cover;
@@ -511,7 +511,7 @@ body {
     left: 55%;
 }
 
-/* Info Containers on Right */
+/* Info Containers on the Right */
 .info-container2 {
     display: none;
     position: absolute;
