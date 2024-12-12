@@ -91,7 +91,7 @@ header {
     font-family: 'Inter', sans-serif;
     font-size: 1rem;
     font-weight: bold;
-    color: #333;
+    color: black;
     transition: color 0.3s;
 }
 
@@ -99,7 +99,7 @@ header {
     color: black;
 }
 
-/* Plan Your Visit CTA */
+/* Book Guided Tour CTA */
 .cta {
     font-family: 'Inter', sans-serif;
     font-size: 1rem;
