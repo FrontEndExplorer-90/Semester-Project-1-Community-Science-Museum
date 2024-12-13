@@ -35,74 +35,91 @@ The website will consist of the following pages:
      - Admission fees (including free entry details).
 
 5. **Get Involved**
-   - Details for:
-     - Volunteering.
-     - Donations.
-     - Internships.
+   - Opportunities to:
+     - Volunteer.
+     - Donate or become a member.
+     - Participate in internship programs for students.
 
 6. **About**
-   - Museum’s mission and vision.
-   - History and significance of the museum.
+   - Mission and vision of the museum.
+   - Brief history of its significance to the community.
+
+7. **Contact**
+   - Accessible contact form.
+   - Call-to-action for inquiries or feedback.
 
 ---
 
 ## Content Plan
-Each page will contain the following sections and content:
 
-### **Home**
-- **Header**: Catchy tagline: "Explore Together at the Community Science Museum!"
+### Home
+- **Header**: "Explore Together at the Community Science Museum."
 - **Sections**:
-  - Intro to the museum: Brief summary (1-2 paragraphs).
-  - Highlights: Interactive exhibits, over 1000 exhibits to explore.
-  - Featured CTA: Link to “Exhibits” or “Visit Us.”
+  - Introductory paragraph about the museum.
+  - Highlights: Interactive exhibits and key events.
+  - Featured CTA: Links to “Exhibits” or “Plan Your Visit.”
 
-### **Exhibits**
+### Exhibits
 - **Header**: "Discover the Wonders of Science."
 - **Sections**:
-  - Sub-sections for Cosmology, Evolution, Robotics, etc.
-  - For each subsection:
-    - 1-2 paragraphs of engaging content.
-    - Images with alt text.
-    - Call-to-action: "Learn More" or "Visit Us."
+  - Sub-sections for Cosmology, Evolution, Robotics, Medicine, and more.
+  - Each section includes:
+    - Engaging text descriptions.
+    - Images with descriptive alt text.
+    - Interactive map features for floor navigation.
 
-### **Events**
+### Events
 - **Header**: "Exciting Events for the Whole Family."
 - **Sections**:
-  - List of special events (e.g., Night in the Museum).
-  - Event details:
-    - Title, description, date/time, and registration link (if applicable).
+  - Featured events with descriptions and dates.
+  - Registration instructions for workshops or lectures.
 
-### **Visit Us**
+### Visit Us
 - **Header**: "Plan Your Visit."
 - **Sections**:
-  - Opening hours (list format).
-  - Address (with placeholder for Google Maps iframe later).
-  - Accessibility information (e.g., wheelchair ramps, audio guides).
+  - Practical details:
+    - Address, opening hours, and ticket prices.
+    - Accessibility services.
 
-### **Get Involved**
+### Get Involved
 - **Header**: "Support the Museum."
 - **Sections**:
-  - Volunteering opportunities.
-  - How to donate (instructions, contact info).
-  - Internship details.
+  - Volunteer opportunities.
+  - Instructions on donating or becoming a member.
+  - Internship programs for students.
 
-### **About**
+### About
 - **Header**: "About the Community Science Museum."
 - **Sections**:
-  - Museum’s mission and vision.
-  - Brief history (provided in assets).
-  - Engaging call-to-action: "Explore Together."
+  - Mission and vision statement.
+  - A brief history of the museum.
+
+### Contact
+- **Header**: "Get in Touch."
+- **Sections**:
+  - Accessible contact form with validation.
+  - Information about response times and other contact options.
+
+---
+
+## Features
+- Fully responsive design for mobile, tablet, and desktop.
+- Interactive maps with accessible, clickable exhibit highlights.
+- WCAG-compliant accessibility, including ARIA roles, semantic HTML, and proper color contrast.
+- Optimized images (<200KB) for faster loading times.
+- Accessible and validated forms for user interaction.
 
 ---
 
 ## Assets and Resources
-- **Text Content**: Provided in `SemesterProject1.zip`.
-- **Images**: Optimize and compress to <200KB before use.
-- **Hosting**: Deploy on Netlify (use GitHub repository for version control).
+- **Text Content**: Written in collaboration with project partners.
+- **Images**: Compressed and optimized for performance.
+- **Validation Tools**: WAVE, WebAIM, and Nu HTML Checker.
+- **Deployment**: Hosted on Netlify, with GitHub for version control.
 
 ---
 
-### **Step 3.3: Save and Commit**
-Once you’ve written the `README.md`:
-1. Save the file.
-2. Open your terminal and commit the changes to your repository.
+## Setup Instructions
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-repo/community-science-museum.git
