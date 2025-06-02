@@ -2,22 +2,22 @@ body {
     font-family: 'Kodchasan', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #F5EACD;
-    color: #333;
+    background-color: var(--bg-primary);
+    color: var(--text-secondary);
 }
 
 .header-line {
     width: calc(100% - 140px);
     height: 3px;
-    background-color: black;
+    background-color: var(--text-primary);
     position: absolute;
     bottom: 0;
     left: 140px;
     z-index: 1;
-} 
+}
 
 main {
-    background-image: url('../Images/bookingreceipt_5_11zon.webp'); 
+    background-image: url('../Images/bookingreceipt_5_11zon.webp');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -26,7 +26,7 @@ main {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    margin-bottom: 60px; 
+    margin-bottom: 60px;
 }
 
 /* Confirmation Section */
@@ -34,23 +34,23 @@ main {
     max-width: 800px;
     background: rgba(255, 255, 255, 0.9);
     padding: 40px;
-    border-radius: 15px;
+    border-radius: var(--radius-lg);
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
     text-align: center;
     position: relative;
 }
 
 .confirmation h1 {
-    font-size: 3rem;
-    color: #409286;
+    font-size: var(--heading-xl);
+    color: var(--accent-light);
     margin-bottom: 20px;
     font-weight: bold;
 }
 
 .confirmation p {
-    font-size: 1.2rem;
+    font-size: var(--body-lg);
     line-height: 1.6;
-    color: black;
+    color: var(--text-primary);
     margin-bottom: 30px;
     font-weight: bold;
 }
@@ -61,15 +61,15 @@ main {
 }
 
 .app-promotion h2 {
-    font-size: 2rem;
-    color: #409286;
+    font-size: var(--heading-lg);
+    color: var(--accent-light);
     margin-bottom: 10px;
     font-weight: bold;
 }
 
 .app-promotion p {
-    font-size: 1rem;
-    color: black;
+    font-size: var(--body-md);
+    color: var(--text-primary);
     margin-bottom: 20px;
     font-weight: bold;
 }
@@ -78,8 +78,8 @@ main {
     width: 200px;
     height: auto;
     margin-bottom: 20px;
-    border-radius: 10px; 
-    border: 2px solid black;
+    border-radius: var(--radius-md);
+    border: 2px solid var(--text-primary);
 }
 
 /* Store Buttons */
@@ -94,24 +94,24 @@ main {
     width: 150px;
     height: auto;
     cursor: pointer;
-    border-radius: 10px;
+    border-radius: var(--radius-md);
 }
 
 /* Back to Home Button */
 .back-to-home {
     display: inline-block;
-    background-color: black;
-    color: white;
-    font-size: 1.2rem;
+    background-color: var(--text-primary);
+    color: var(--white);
+    font-size: var(--body-lg);
     font-weight: bold;
     padding: 10px 20px;
-    border-radius: 5px;
+    border-radius: var(--radius-sm);
     text-decoration: none;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 .back-to-home:hover {
-    background-color: #333;
+    background-color: var(--text-secondary);
 }
 
 /* Footer */
@@ -120,14 +120,14 @@ main {
     bottom: 0;
     width: 100%;
     text-align: center;
-    background-color: #F5EACD;
+    background-color: var(--bg-primary);
     padding: 10px 0;
 }
 
 .footer a {
-    color: black;
+    color: var(--text-primary);
     text-decoration: none;
-    font-size: 1rem;
+    font-size: var(--body-md);
     margin: 0 10px;
 }
 

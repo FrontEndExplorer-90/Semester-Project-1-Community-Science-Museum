@@ -2,7 +2,7 @@
 .header-line {
     width: calc(100% - 140px);
     height: 3px;
-    background-color: black;
+    background-color: var(--text-primary);
     position: absolute;
     bottom: 0;
     left: 140px;
@@ -34,14 +34,14 @@
 
 .reserve-spot h1 {
     font-family: 'Kodchasan', sans-serif;
-    font-size: 2.5rem;
-    color: #47837A;
+    font-size: var(--heading-lg);
+    color: var(--accent-dark);
     margin-bottom: 20px;
 }
 
 .reserve-spot p {
-    font-size: 1.2rem;
-    color: black;
+    font-size: var(--body-lg);
+    color: var(--text-primary);
     margin-bottom: 40px;
 }
 
@@ -52,7 +52,7 @@
     padding: 20px;
     background: rgba(255, 255, 255, 0.8);
     border: 2px solid #b8b7b7;
-    border-radius: 10px;
+    border-radius: var(--radius-md);
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
 
@@ -65,31 +65,33 @@ label {
     display: block;
     font-weight: bold;
     margin-bottom: 5px;
-    color: black;
+    color: var(--text-primary);
 }
 
-input, select {
+input,
+select {
     width: 100%;
     padding: 10px;
     border: 1px solid #ddd;
-    border-radius: 5px;
-    font-size: 1rem;
+    border-radius: var(--radius-sm);
+    font-size: var(--body-md);
 }
 
-input:focus, select:focus {
+input:focus,
+select:focus {
     outline: none;
-    border-color: #47837A;
+    border-color: var(--accent-dark);
 }
 
 .submit-button {
     display: inline-block;
-    background-color: #47837A;
-    color: #fff;
-    font-size: 1.2rem;
+    background-color: var(--accent-dark);
+    color: var(--white);
+    font-size: var(--body-lg);
     font-weight: bold;
     padding: 10px 20px;
-    border: 1px solid black;
-    border-radius: 5px;
+    border: 1px solid var(--text-primary);
+    border-radius: var(--radius-sm);
     cursor: pointer;
     transition: background-color 0.3s ease;
 }

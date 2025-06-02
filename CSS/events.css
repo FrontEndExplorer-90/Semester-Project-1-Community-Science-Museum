@@ -1,385 +1,141 @@
-/* Events Page */
+:root {
+  --events-overlay: rgba(245, 234, 205, 0.7);
+  --overlay-dark: rgba(0, 0, 0, 0.7);
+
+  --overlay-professor: rgba(192, 140, 102, 0.95);
+  --overlay-energetica: rgba(59, 125, 119, 0.95);
+  --overlay-night: rgba(9, 41, 87, 0.95);
+
+  --calendar-accent: #366c64;
+  --calendar-hover: #334F77;
+  --calendar-tooltip: black;
+
+  --card-border: black;
+  --card-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  --card-hover-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+
+  --cta-bg: #a0541b;
+  --cta-hover: #BB7541;
+  --cta-color: white;
+}
+
 .events {
-    text-align: center;
-    padding: 60px 20px;
-    min-height: calc(100vh - 100px);
-    position: relative; 
-    z-index: 1; 
-    background-image: url('../Images/BokehLightBackground_4_11zon.webp'); 
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    min-height: calc(100vh - 100px);
+  text-align: center;
+  padding: 60px 20px;
+  min-height: calc(100vh - 100px);
+  position: relative;
+  z-index: 1;
+  background-image: url('../Images/BokehLightBackground_4_11zon.webp');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 .events::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(245, 234, 205, 0.7); 
-    z-index: -2; 
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--events-overlay);
+  z-index: -2;
 }
 
 .header-line {
-    width: calc(100% - 140px);
-    height: 3px;
-    background-color: black;
-    position: absolute;
-    bottom: 0;
-    left: 140px;
-    z-index: 1;
+  width: calc(100% - 140px);
+  height: 3px;
+  background-color: var(--color-black);
+  position: absolute;
+  bottom: 0;
+  left: 140px;
+  z-index: 1;
 }
 
 .events h1 {
-    font-family: 'Kodchasan', sans-serif;
-    font-size: 2rem;
-    margin-bottom: 40px;
-    color: black;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  font-family: var(--font-body);
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: var(--color-black);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-/* Events Grid */
-.events-grid {
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-    align-items: center;
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-/* Large Card for Professor */
-.large-card {
-    position: relative;
-    width: 95%;
-    max-width: 700px;
-    border-radius: 40px;
-    overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.large-card .image-container {
-    position: relative;
-}
-
-.large-card img {
-    width: 100%;
-    height: auto;
-    display: block;
-    border: 2px solid black;
-    border-radius: 40px;
-}
-
-/* Sub-grid for Other Cards */
-.sub-grid {
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-    flex-wrap: wrap; 
-}
-
+/* Card Styling */
+.large-card,
 .event-card {
-    position: relative;
-    width: 500px;
-    border-radius: 40px;
-    overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    margin: 0 auto;
+  border-radius: 40px;
+  overflow: hidden;
+  box-shadow: var(--card-shadow);
+  transition: transform var(--transition-default) ease, box-shadow var(--transition-default) ease;
 }
 
-.event-card img {
-    width: 100%;
-    height: auto;
-    display: block;
-    border: 2px solid black;
-    border-radius: 40px;
+.large-card:hover,
+.event-card:hover {
+  transform: scale(1.05);
+  box-shadow: var(--card-hover-shadow);
 }
 
-/* Hover Effects For Cards*/
-.event-card:hover,
-.large-card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+.event-card img,
+.large-card img {
+  border: 2px solid var(--card-border);
+  border-radius: 40px;
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
-/* Overlay Base Style */
+/* Overlay */
 .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 20px;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-    border-radius: 40px;
+  background-color: var(--overlay-dark);
+  color: var(--text-white);
+  border-radius: 40px;
+  opacity: 0;
+  transition: opacity var(--transition-default);
 }
 
-/* Show Overlay on Hover */
 .large-card:hover .overlay,
 .event-card:hover .overlay {
-    opacity: 1;
+  opacity: 1;
 }
 
-/* Overlay Specific Styling */
 .professor-overlay {
-    background-color: rgba(192, 140, 102, 0.95);
+  background-color: var(--overlay-professor);
 }
 
 .energetica-overlay {
-    background-color: rgba(59, 125, 119, 0.95);
+  background-color: var(--overlay-energetica);
 }
 
 .night-museum-overlay {
-    background-color: rgba(9, 41, 87, 0.95);
+  background-color: var(--overlay-night);
 }
 
-/* Overlay Text */
-.overlay p {
-    font-family: 'Kodchasan', sans-serif;
-    font-size: 1rem;
-    line-height: 1.5;
-    color: #fff;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
-}
-
-.overlay a {
-    font-size: 1rem;
-    font-weight: bold;
-    color: #fff;
-    text-decoration: underline;
-    margin-top: 10px;
-}
-
-/* Calendar Section */
-.calendar-header {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    margin-bottom: 10px;
-    font-family: 'Kodchasan', sans-serif;
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: black;
-}
-
+/* Calendar Styling */
 .calendar-header .month {
-    color: #366c64;
-}
-
-.calendar-header .year {
-    color: black;
-}
-
-/* Calendar Section */
-.calendar-section {
-    margin: 40px 0;
-    text-align: center;
-}
-
-.calendar {
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    gap: 10px;
-    margin: 20px auto;
-    max-width: 600px;
-}
-
-.day, .date {
-    padding: 10px;
-    border: 1px solid #ddd;
-    text-align: center;
-    background-color: #fff;
+  color: var(--calendar-accent);
 }
 
 .date.event {
-    background-color: #366c64;
-    color: white;
-    cursor: pointer;
-    position: relative;
-}
-
-.date.event::after {
-    content: attr(data-event); 
-    position: absolute;
-    bottom: 120%; 
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: black;
-    color: #fff;
-    padding: 5px 10px;
-    border-radius: 5px;
-    font-size: 0.8rem;
-    white-space: nowrap;
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 0.2s, visibility 0.2s;
-    z-index: 100;
+  background-color: var(--calendar-accent);
+  color: var(--text-white);
 }
 
 .date.event:hover {
-    background-color: #334F77;
+  background-color: var(--calendar-hover);
 }
 
-.date.event:hover::after {
-    opacity: 1;
-    visibility: visible;
+.date.event::after {
+  background-color: var(--calendar-tooltip);
+  color: var(--text-white);
 }
 
-.legend {
-    margin-top: 15px;
-    font-size: 1rem;
-    color: black;
-}
-
-.event-indicator {
-    color: ##366c64;
-    font-weight: bold;
-}
-
-#event-details {
-    margin-top: 20px;
-    padding: 20px;
-    background-color: #fff;
-    border: 1px solid black;
-    border-radius: 10px;
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-#event-details h3 {
-    font-size: 1.5rem;
-    color: black;
-    margin-bottom: 10px;
-}
-
-#event-details .event-info {
-    display: none; 
-    margin-bottom: 20px;
-
-}
-
-#event-details .event-info:target {
-    display: block; 
-}
-
-/* Links inside the Calendar */
-.calendar .event-link {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-    background-color: #30615a;
-}
-
-.calendar .event-link:hover {
-    text-decoration: underline;
-}
-
-/* Booking Button */
-.booking-button {
-    margin-top: 30px;
-}
-
+/* CTA Button */
 .booking-button .cta {
-    display: inline-block;
-    background-color: #a0541b;
-    color: white;
-    font-size: 1.2rem;
-    font-weight: bold;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s;
+  background-color: var(--cta-bg);
+  color: var(--cta-color);
+  transition: background-color var(--transition-default);
 }
 
 .booking-button .cta:hover {
-    background-color: #BB7541;
-}
-
-/*Page Specific Responsive Design */
-
-@media (max-width: 1024px) {
-    .events h1 {
-        font-size: 1.8rem;
-    }
-
-    .large-card {
-        width: 90%;
-    }
-
-    .event-card {
-        width: 45%;
-    }
-
-    .sub-grid {
-        gap: 20px;
-    }
-
-    .calendar {
-        grid-template-columns: repeat(7, 1fr); 
-        gap: 8px;
-    }
-
-    .day, .date {
-        font-size: 0.9rem; 
-        padding: 8px; 
-    }
-}
-
-
-@media (max-width: 768px) {
-    .events h1 {
-        font-size: 1.5rem;
-        margin-bottom: 20px;
-    }
-
-    .large-card {
-        width: 100%;
-    }
-
-    .event-card {
-        width: 100%;
-    }
-
-    .sub-grid {
-        flex-direction: column;
-        gap: 20px;
-    }
-
-    .overlay p {
-        font-size: 0.9rem;
-    }
-
-    .overlay a {
-        font-size: 0.85rem;
-    }
-
-    .calendar {
-        grid-template-columns: repeat(4, 1fr); 
-        gap: 5px; 
-    }
-
-    .day, .date {
-        font-size: 0.8rem; 
-        padding: 6px; 
-    }
-
-    .booking-button .cta {
-        font-size: 1rem;
-        padding: 8px 12px;
-    }
+  background-color: var(--cta-hover);
 }

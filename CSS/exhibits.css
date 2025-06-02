@@ -1,571 +1,202 @@
-/* General Styling */
+:root {
+  --overlay-beige-strong: rgba(245, 234, 205, 0.85);
+  --map-border: black;
+  --map-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  --info-box-bg: rgb(247, 246, 246);
+  --info-border: #409286;
+  --dot-color: #ff7f26;
+}
+
 body {
-    font-family: 'Kodchasan', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #F5EACD;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    min-height: 100vh;
+  font-family: var(--font-body);
+  margin: 0;
+  padding: 0;
+  background-color: var(--color-bg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh;
 }
 
 .header-line {
-    width: calc(100% - 140px);
-    height: 3px;
-    background-color: black;
-    position: absolute;
-    bottom: 0;
-    left: 140px;
-    z-index: 1;
+  width: calc(100% - 140px);
+  height: 3px;
+  background-color: var(--color-black);
+  position: absolute;
+  bottom: 0;
+  left: 140px;
+  z-index: 1;
 }
 
 .navbar {
-    position: relative;
-    z-index: 100;
-    background-color: #F5EACD;
-    padding: 10px 20px;
+  z-index: 100;
+  background-color: var(--color-bg);
+  padding: 10px 20px;
 }
 
 .logo {
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    position: relative;
-    z-index: 1001;
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 1001;
 }
 
 .logo img {
-    height: 145px;
-    width: auto;
-    margin-right: 10px;
-    margin-top: 55px;
-    position: absolute;
-    z-index: 110;
-    transition: transform 0.3s ease;
+  height: 145px;
+  margin-right: 10px;
+  margin-top: 55px;
+  position: absolute;
+  z-index: 110;
+  transition: transform var(--transition-default) ease;
 }
 
 .logo span {
-    font-size: 1.25rem;
-    font-weight: bold;
-    text-decoration: none;
-    color: black;
-    position: relative;
-    left: 140px;
-    margin-top: 10px;
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: var(--color-black);
+  left: 140px;
+  margin-top: 10px;
+  position: relative;
 }
 
 .logo:hover img {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .nav-links {
-    list-style: none;
-    display: flex;
-    gap: 20px;
+  list-style: none;
+  display: flex;
+  gap: 20px;
 }
 
 .nav-links a {
-    text-decoration: none;
-    font-family: 'Inter', sans-serif;
-    font-size: 1rem;
-    font-weight: bold;
-    color: black;
-    transition: color 0.3s;
-}
-
-.nav-links a:hover {
-    color: black;
+  text-decoration: none;
+  font-family: var(--font-heading);
+  font-size: 1rem;
+  font-weight: bold;
+  color: var(--color-black);
+  transition: color var(--transition-default);
 }
 
 .cta {
-    font-family: 'Inter', sans-serif;
-    font-size: 1rem;
-    background-color: #C08C66;
-    color: black;
-    font-weight: bold;
-    text-decoration: none;
-    border: 1px solid black;
-    border-radius: 5px;
-    padding: 5px 10px;
-    transition: background-color 0.3s, color 0.3s;
-    text-align: center;
-    margin-right: 30px;
+  font-family: var(--font-heading);
+  font-size: 1rem;
+  background-color: var(--color-accent);
+  color: var(--color-black);
+  font-weight: bold;
+  border: 1px solid var(--color-black);
+  border-radius: 5px;
+  padding: 5px 10px;
+  transition: background-color var(--transition-default), color var(--transition-default);
+  text-align: center;
+  margin-right: 30px;
 }
 
 .cta:hover {
-    background-color: #BB7541;
-    color: black;
+  background-color: var(--color-accent-hover);
 }
 
-
 .exhibits-page {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    width: 100%;
-    margin: 0 auto;
-    padding: 60px 20px;
-    text-align: center;
-    position: relative; 
-    background-image: url('../Images/PlanetariumDome_72_11zon.webp');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    min-height: calc(100vh - 100px);
+  background-image: url('../Images/PlanetariumDome_72_11zon.webp');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: calc(100vh - 100px);
+  padding: 60px 20px;
+  text-align: center;
+  position: relative;
 }
 
 .exhibits-page::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(245, 234, 205, 0.85); 
-    z-index: 0; 
+  content: '';
+  background-color: var(--overlay-beige-strong);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
 }
 
 .exhibits-page > * {
-    position: relative; 
-    z-index: 1;
+  position: relative;
+  z-index: 1;
 }
 
-/* Title and Description */
 .exhibits-title {
-    font-size: 3rem;
-    margin-bottom: 20px;
-    color: black;
-    text-align: center;
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: var(--color-black);
 }
 
 .exhibits-description {
-    font-size: 1.2rem;
-    color: black;
-    margin-bottom: 40px;
-    text-align: center;
+  font-size: 1.2rem;
+  color: var(--color-black);
+  margin-bottom: 40px;
 }
 
-.reset-area {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: transparent;
-    z-index: 1;
-    pointer-events: auto; 
-    cursor: pointer;
-}
-
-/* Floor Sections */
-.floor-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    max-width: 1000px;
-    margin: 40px auto;
-    padding: 0 20px;
-    text-align: center;
-    position: relative;
-}
-
-.floor-title {
-    font-size: 2rem;
-    margin-bottom: 10px;
-    color: black;
-    text-align: center;
-}
-
-.floor-description {
-    font-size: 1rem;
-    color: black;
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-.visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-    white-space: nowrap;
-    border: 0;
-}
-
-/* Map Container */
-.map-container {
-    position: relative;
-    margin: 20px;
-    width: 60%;
-}
-
-.map-container img {
-    width: 100%;
-    display: block;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    pointer-events: none;
-}
-
-.info-toggle {
-    display: none; 
-}
-
-
-.dot, .dot1, .dot2 {
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    background-color: #ff7f26;
-    border-radius: 50%;
-    cursor: pointer;
-    z-index: 10;
-}
-
-.dot:hover, .dot1:hover, .dot2:hover {
-    transform: scale(1.3);
-}
-
-/* Dot Positions */
-.dot.cafe {
-    top: 17.4%; 
-    left: 67.9%; 
-}
-
-.dot.planetarium {
-    top: 26%; 
-    left: 47.3%; 
-}
-
-.dot.cosmology {
-    top: 47.1%; 
-    left: 64.3%; 
-}
-
-.dot.playground {
-    top: 68.2%; 
-    left: 59.8%; 
-}
-
-.dot1.ecology {
-    top: 14.4%;
-    left: 47.9%;
-}
-
-.dot1.evolution {
-    top: 31.9%;
-    left: 32.3%;
-}
-
-.dot1.aula {
-    top: 77.9%;
-    left: 6.2%;
-}
-
-.dot1.biology {
-    top: 73.3%;
-    left: 45.4%;
-}
-
-.dot1.meetup {
-    top: 52.2%;
-    left: 67.9%;
-}
-
-.dot2.medicine {
-    top: 24%;
-    left: 53.3%;
-}
-
-.dot2.robotics {
-    top: 51.8%;
-    left: 6.7%;
-}
-
-.dot2.energetica {
-    top: 47.9%;
-    left: 48.4%;
-}
-
-.dot2.insects {
-    top: 45.8%;
-    left: 89.4%;
-}
-
-.dot2.garden {
-    top: 77.2%;
-    left: 53.3%;
-}
-
-/* Hover Images (Appear On Map) */
-.info-image {
-    display: none;
-    position: absolute;
-    width: 250px;
-    height: 250px;
-    z-index: 20;
-    border-radius: 50%;
-}
-
-.info-image img {
-    width: 250px;
-    height: 250px;
-    border-radius: 50%;
-    border: 2px solid black;
-    object-fit: cover;
-}
-
-/* Specific Image Positions */
-.info-image.cafe {
-    top: 14%;
-    left: 60%;
-}
-
-.info-image.planetarium {
-    top: 24%;
-    left: 50%;
-}
-
-.info-image.cosmology {
-    top: 43%;
-    left: 68%;
-}
-
-.info-image.playground {
-    top: 64.2%;
-    left: 63%;
-}
-
-/* Info Container on Right */
-.info-container {
-    display: none;
-    position: absolute;
-    top: 0;
-    right: -40%;
-    max-width: 30%;
-    background-color: rgb(247, 246, 246);
-    border: 2px solid #409286;
-    border-radius: 8px;
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    text-align: left;
-    z-index: 20;
-}
-
-.info-container p {
-    font-size: 1rem;
-    color: black;
-    line-height: 1.5;
-    margin: 0;
-}
-
-#cafe-radio:checked ~ .info-image.cafe,
-#cafe-radio:checked ~ .info-container.cafe {
-    display: block;
-}
-
-#planetarium-radio:checked ~ .info-image.planetarium,
-#planetarium-radio:checked ~ .info-container.planetarium {
-    display: block;
-}
-
-#cosmology-radio:checked ~ .info-image.cosmology,
-#cosmology-radio:checked ~ .info-container.cosmology {
-    display: block;
-}
-
-#playground-radio:checked ~ .info-image.playground,
-#playground-radio:checked ~ .info-container.playground {
-    display: block;
-}
-
-.info-image1 {
-    display: none;
-    position: absolute;
-    width: 250px;
-    height: 250px;
-    z-index: 20;
-    border-radius: 50%;
-}
-
-.info-image1 img {
-    width: 250px;
-    height: 250px;
-    border-radius: 50%;
-    border: 2px solid black;
-    object-fit: cover;
-}
-
-/* First Floor Specific Image Positions */
-.info-image1.ecology {
-    top: 8%;
-    left: 54%;
-}
-
-.info-image1.evolution {
-    top: 28%;
-    left: 38%;
-}
-
-.info-image1.aula {
-    top: 55%;
-    left: 10%;
-}
-
-.info-image1.biology {
-    top: 60%;
-    left: 53%;
-}
-
-.info-image1.meetup {
-    top: 58%;
-    left: 56%;
-}
-
-/* Info Container for First Floor */
-.info-container1 {
-    display: none;
-    position: absolute;
-    top: 0;
-    right: -40%;
-    max-width: 30%;
-    background-color: rgb(247, 246, 246);
-    border: 2px solid #409286;
-    border-radius: 8px;
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    text-align: left;
-    z-index: 20;
-}
-
-.info-container1 p {
-    font-size: 1rem;
-    color: black;
-    line-height: 1.5;
-    margin: 0;
-}
-
-/* Radio Toggles for First Floor */
-#ecology-radio:checked ~ .info-image1.ecology,
-#ecology-radio:checked ~ .info-container1.ecology {
-    display: block;
-}
-
-#evolution-radio:checked ~ .info-image1.evolution,
-#evolution-radio:checked ~ .info-container1.evolution {
-    display: block;
-}
-
-#aula-radio:checked ~ .info-image1.aula,
-#aula-radio:checked ~ .info-container1.aula {
-    display: block;
-}
-
-#biology-radio:checked ~ .info-image1.biology,
-#biology-radio:checked ~ .info-container1.biology {
-    display: block;
-}
-
-#meetup-radio:checked ~ .info-image1.meetup,
-#meetup-radio:checked ~ .info-container1.meetup {
-    display: block;
-}
-
-.info-image2 {
-    display: none;
-    position: absolute;
-    width: 250px;
-    height: 250px;
-    z-index: 20;
-    border-radius: 50%;
-}
-
-.info-image2 img {
-    width: 250px;
-    height: 250px;
-    border-radius: 50%;
-    border: 2px solid black;
-    object-fit: cover;
-}
-
-/* Specific Image Positions */
-.info-image2.medicine {
-    top: 10%;
-    left: 58%;
-}
-
-.info-image2.robotics {
-    top: 28%;
-    left: 10%;
-}
-
-.info-image2.energetica {
-    top: 53%;
-    left: 25%;
-}
-
-.info-image2.insects {
-    top: 51%;
-    left: 67%;
-}
-
-.info-image2.garden {
-    top: 79%;
-    left: 55%;
-}
-
-/* Info Containers on the Right */
+/* Shared Info Box */
+.info-container,
+.info-container1,
 .info-container2 {
-    display: none;
-    position: absolute;
-    top: 0;
-    right: -40%;
-    max-width: 30%;
-    background-color: rgb(247, 246, 246);
-    border: 2px solid #409286;
-    border-radius: 8px;
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    text-align: left;
-    z-index: 20;
+  display: none;
+  background-color: var(--info-box-bg);
+  border: 2px solid var(--info-border);
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: var(--map-shadow);
+  position: absolute;
+  top: 0;
+  right: -40%;
+  max-width: 30%;
+  text-align: left;
+  z-index: 20;
 }
 
+.info-container p,
+.info-container1 p,
 .info-container2 p {
-    font-size: 1rem;
-    color: black;
-    line-height: 1.5;
-    margin: 0;
+  font-size: 1rem;
+  color: var(--color-black);
 }
 
-/* Visibility Triggers */
-#medicine-radio:checked ~ .info-image2.medicine,
-#medicine-radio:checked ~ .info-container2.medicine {
-    display: block;
+/* Dots */
+.dot,
+.dot1,
+.dot2 {
+  width: 20px;
+  height: 20px;
+  background-color: var(--dot-color);
+  border-radius: 50%;
+  position: absolute;
+  cursor: pointer;
+  z-index: 10;
+  transition: transform var(--transition-default);
 }
 
-#robotics-radio:checked ~ .info-image2.robotics,
-#robotics-radio:checked ~ .info-container2.robotics {
-    display: block;
+.dot:hover,
+.dot1:hover,
+.dot2:hover {
+  transform: scale(1.3);
 }
 
-#energetica-radio:checked ~ .info-image2.energetica,
-#energetica-radio:checked ~ .info-container2.energetica {
-    display: block;
+/* Hover Images */
+.info-image,
+.info-image1,
+.info-image2 {
+  display: none;
+  width: 250px;
+  height: 250px;
+  position: absolute;
+  z-index: 20;
+  border-radius: 50%;
 }
 
-#insects-radio:checked ~ .info-image2.insects,
-#insects-radio:checked ~ .info-container2.insects {
-    display: block;
+.info-image img,
+.info-image1 img,
+.info-image2 img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 2px solid var(--map-border);
+  object-fit: cover;
 }
-
-#garden-radio:checked ~ .info-image2.garden,
-#garden-radio:checked ~ .info-container2.garden {
-    display: block;
-}
-

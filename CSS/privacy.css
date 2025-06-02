@@ -1,17 +1,18 @@
 /* General Page Styles */
 body {
-    font-family: 'Kodchasan', sans-serif;
+    font-family: var(--font-main);
     margin: 0;
     padding: 0;
     line-height: 1.6;
-    background-color: #F5EACD;
+    background-color: var(--bg-main);
+    color: var(--text-primary);
     object-fit: cover;
 }
 
 .header-line {
     width: calc(100% - 140px);
     height: 3px;
-    background-color: black;
+    background-color: var(--text-primary);
     position: absolute;
     bottom: 0;
     left: 140px;
@@ -20,19 +21,19 @@ body {
 
 /* Privacy Page Styles */
 .privacy-page {
-    display: flex; 
-    justify-content: center; 
-    align-items: center; 
-    flex-direction: column; 
-    text-align: center; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
     padding: 20px;
     position: relative;
     z-index: 1;
-    background-image: url('../Images/InformationPoint_38_11zon.webp'); 
+    background-image: url('../Images/InformationPoint_38_11zon.webp');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    min-height: 100vh; 
+    min-height: 100vh;
 }
 
 .privacy-page::before {
@@ -42,7 +43,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(245, 234, 205, 0.8); 
+    background-color: var(--bg-overlay-heavy);
     z-index: -1;
 }
 
@@ -50,47 +51,47 @@ body {
 .content-container {
     display: flex;
     flex-direction: column;
-    align-items: center; 
+    align-items: center;
     justify-content: center;
     padding: 20px;
-    max-width: 800px; 
+    max-width: 800px;
     box-sizing: border-box;
 }
 
 /* Privacy Text Styles */
 .privacy-text {
-    text-align: left; 
+    text-align: left;
     font-weight: bold;
 }
 
 .privacy-title {
-    font-size: 3rem;
+    font-size: var(--heading-xl);
     margin-bottom: 20px;
-    color: black;
+    color: var(--text-primary);
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .privacy-text h2 {
-    font-size: 1.8rem;
+    font-size: var(--heading-md);
     margin-bottom: 10px;
-    color: black;
+    color: var(--text-primary);
 }
 
 .privacy-text p,
 .privacy-text ul {
     margin-bottom: 20px;
-    color: black;
+    color: var(--text-primary);
 }
 
 /* Footer */
 .footer {
     position: relative;
-    background-color: #F5EACD;
+    background-color: var(--bg-main);
     text-align: center;
     padding: 10px 0;
-    font-family: 'Inter', sans-serif;
-    font-size: 0.875rem;
-    color: black;
+    font-family: var(--font-secondary);
+    font-size: var(--body-sm);
+    color: var(--text-primary);
 }
 
 .footer::before {
@@ -100,18 +101,17 @@ body {
     left: 0;
     width: 100%;
     height: 3px;
-    background-color: black;
+    background-color: var(--text-primary);
 }
 
-/*Page Specific Responsive Design */
-
+/* Responsive Design */
 @media (max-width: 1024px) {
     .content-container {
         padding: 20px;
     }
 
     .privacy-title {
-        font-size: 2.5rem; 
+        font-size: 2.5rem;
     }
 }
 
@@ -121,19 +121,19 @@ body {
     }
 
     .privacy-title {
-        font-size: 2rem; 
+        font-size: 2rem;
     }
 
     .privacy-text h2 {
-        font-size: 1.6rem; 
+        font-size: 1.6rem;
     }
 
     .privacy-text p,
     .privacy-text ul {
-        font-size: 1rem; 
+        font-size: 1rem;
     }
 
     .footer {
-        font-size: 0.75rem; 
+        font-size: 0.75rem;
     }
 }

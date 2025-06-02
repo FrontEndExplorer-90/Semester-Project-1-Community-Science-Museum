@@ -1,150 +1,169 @@
+:root {
+  --hero-overlay: rgba(0, 0, 0, 0.5);
+  --hero-bg-box: rgba(0, 0, 0, 0.6);
+  --highlight-bg: rgba(245, 234, 205, 0.9);
+
+  --highlight-exhibits: #5377AA;
+  --highlight-exhibits-border: #334F77;
+
+  --highlight-events: #5C928A;
+  --highlight-events-border: #47837A;
+
+  --highlight-involved: #a0541b;
+  --highlight-involved-border: #864c1f;
+
+  --text-white: #fff;
+  --text-white-hover: #ddd;
+
+  --transition-default: 0.3s;
+  --box-radius: 40px;
+  --box-shadow-dark: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
 /* Background Wrapper */
 .background-wrapper {
-    background: url('../Images/TRexDomeHall_77_11zon.webp') no-repeat center center/cover;
-    background-attachment: fixed;
-    background-size: cover;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+  background: url('../Images/TRexDomeHall_77_11zon.webp') no-repeat center center/cover;
+  background-attachment: fixed;
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .header-line {
-    width: calc(100% - 140px);
-    height: 3px;
-    background-color: black;
-    position: absolute;
-    bottom: 0;
-    left: 140px;
-    z-index: 1;
+  width: calc(100% - 140px);
+  height: 3px;
+  background-color: var(--color-black);
+  position: absolute;
+  bottom: 0;
+  left: 140px;
+  z-index: 1;
 }
 
 /* Hero Section */
 .hero {
-    height: 600px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    position: relative;
-    background: rgba(0, 0, 0, 0.5); 
-    color: #fff;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  background: var(--hero-overlay);
+  color: var(--text-white);
 }
 
 .hero-content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #fff;
-    text-shadow: none; 
-    font-family: 'Kodchasan', sans-serif;
-    font-size: 3rem;
-    line-height: 1.2;
-    font-weight: bold;
-    padding: 20px; 
-    background: rgba(0, 0, 0, 0.6); 
-    border-radius: 10px; 
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--text-white);
+  text-shadow: none;
+  font-family: var(--font-body);
+  font-size: 3rem;
+  line-height: 1.2;
+  font-weight: bold;
+  padding: 20px;
+  background: var(--hero-bg-box);
+  border-radius: 10px;
 }
 
 /* Highlights Section */
 .highlights {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 40px 20px;
-    background-color: rgba(245, 234, 205, 0.9);
-    gap: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 40px 20px;
+  background-color: var(--highlight-bg);
+  gap: 20px;
 }
 
 .highlight-box {
-    width: 300px;
-    height: 200px;
-    border-radius: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    font-size: 1.2rem;
-    font-weight: bold;
-    transition: transform 0.3s, background-color 0.3s;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
-    margin: 0 10px;
-    color: #fff;
+  width: 300px;
+  height: 200px;
+  border-radius: var(--box-radius);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  transition: transform var(--transition-default), background-color var(--transition-default);
+  box-shadow: var(--box-shadow-dark);
+  margin: 0 10px;
+  color: var(--text-white);
 }
 
 .highlight-box a {
-    color: #fff;
-    text-decoration: none;
+  color: var(--text-white);
+  text-decoration: none;
 }
 
 .highlight-box a:hover {
-    color: #ddd;
+  color: var(--text-white-hover);
 }
 
 /* Individual Box Colors */
 .exhibits {
-    background-color: #5377AA;
-    border: 2px solid #334F77;
+  background-color: var(--highlight-exhibits);
+  border: 2px solid var(--highlight-exhibits-border);
 }
 
 .events {
-    background-color: #5C928A;
-    border: 2px solid #47837A;
+  background-color: var(--highlight-events);
+  border: 2px solid var(--highlight-events-border);
 }
 
 .involved {
-    background-color: #a0541b;
-    border: 2px solid #864c1f;
+  background-color: var(--highlight-involved);
+  border: 2px solid var(--highlight-involved-border);
 }
 
 .highlight-box:hover {
-    transform: scale(1.05);
-    filter: brightness(0.9);
+  transform: scale(1.05);
+  filter: brightness(0.9);
 }
 
-/*Page Specific Responsive Design */
-
+/* Responsive Design */
 @media (max-width: 1024px) {
-    .highlights {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
+  .highlights {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 
-    .highlight-box {
-        width: 250px;
-        height: 180px;
-        font-size: 1rem;
-    }
+  .highlight-box {
+    width: 250px;
+    height: 180px;
+    font-size: 1rem;
+  }
 
-    .hero-content {
-        font-size: 2.5rem;
-    }
+  .hero-content {
+    font-size: 2.5rem;
+  }
 }
 
 @media (max-width: 768px) {
-    .hero {
-        height: 400px;
-    }
+  .hero {
+    height: 400px;
+  }
 
-    .hero-content {
-        top: auto;
-        bottom: 10%;
-        transform: translateX(-50%);
-        font-size: 1.8rem;
-        line-height: 1.3;
-    }
+  .hero-content {
+    top: auto;
+    bottom: 10%;
+    transform: translateX(-50%);
+    font-size: 1.8rem;
+    line-height: 1.3;
+  }
 
-    .highlights {
-        flex-direction: column;
-        gap: 20px;
-    }
+  .highlights {
+    flex-direction: column;
+    gap: 20px;
+  }
 
-    .highlight-box {
-        width: 90%;
-        height: 150px;
-        font-size: 0.9rem;
-    }
+  .highlight-box {
+    width: 90%;
+    height: 150px;
+    font-size: 0.9rem;
+  }
 }
-
-
