@@ -1,3 +1,30 @@
+## This section documents the feedback received for the project and the changes made in response, along with reflections on decisions and prioritization.
+
+## Mobile Prototype
+I chose not to create a separate mobile prototype in Figma for this delivery. While I understand its value in the planning process, I focused my efforts on directly implementing and testing a fully responsive mobile layout through CSS media queries and live screen testing. With a two-week timeframe, extensive feedback revisions on three separate pages, building an entirely new portfolio, and balancing family and work commitments, I had to prioritize. The final mobile layout is tested, functional, and visually consistent, even without a dedicated mobile prototype.
+
+
+## GitHub Project board status
+Changes Made:
+- Moved all completed tasks to the Done column
+
+- Reviewed open tasks and left comments or archived unused ones
+
+
+## Hamburger Menu for Mobile
+After testing the mobile layout on multiple devices and breakpoints, I decided not to implement a hamburger menu. The navigation links fit well on smaller screens, remain clear and easy to interact with, and do not disrupt the visual hierarchy or usability. I intentionally prioritized simplicity and accessibility over adding unnecessary complexity to the user interface.
+
+## CSS DRY Principle
+
+Changes Made:
+
+-Refactored all CSS files to use :root variables for fonts, colors, sizes, and spacing
+
+-Removed repeated declarations and applied shared values consistently across pages
+
+-Improved maintainability and readability of all stylesheets
+
+
 # Community Science Museum Website
 
 ## Project Overview
