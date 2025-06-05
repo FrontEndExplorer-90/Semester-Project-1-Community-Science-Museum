@@ -24,6 +24,10 @@ Changes Made:
 
 -Improved maintainability and readability of all stylesheets
 
+## Implementing JavaScript.
+
+I chose not to update the project with JavaScript beause of the lack of time. But I have gone trough the thought and considered it,because it would clearly make imporovments to the page. SO this is something I wnat to do in the future. 
+
 
 # Community Science Museum Website
 
