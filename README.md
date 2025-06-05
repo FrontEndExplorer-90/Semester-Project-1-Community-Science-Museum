@@ -18,11 +18,11 @@ After testing the mobile layout on multiple devices and breakpoints, I decided n
 
 Changes Made:
 
--Refactored all CSS files to use :root variables for fonts, colors, sizes, and spacing
+- Refactored all CSS files to use :root variables for fonts, colors, sizes, and spacing
 
--Removed repeated declarations and applied shared values consistently across pages
+- Removed repeated declarations and applied shared values consistently across pages
 
--Improved maintainability and readability of all stylesheets
+- Improved maintainability and readability of all stylesheets
 
 ## Implementing JavaScript.
 
